@@ -10,8 +10,9 @@
     border: 1px solid green;
     width: 65%;
     height: 40%;
+    margin-left: 20px;
     margin-left: 30;
-    margin-top: 30px;
+ 
 }
 #navbar{
 border: 1px solid blue;
