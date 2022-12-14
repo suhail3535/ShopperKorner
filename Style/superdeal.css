@@ -1,0 +1,85 @@
+
+#super {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    gap: 10px;
+    margin: 10px;
+    padding: 10px;
+    width: 80%;
+    margin: auto;
+}
+
+#super>div>img {
+    width: 70%;
+    padding: 30px;
+    border:1px solid red;
+    padding: 10px;
+    margin-top: 10px;
+
+}
+
+#super>div>p {
+    padding: 10px;
+}
+
+#super>div {
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 5px;
+}
+
+#super>div>button {
+    background-color: rgb(30, 248, 252);
+    margin: 20px;
+    padding: 10px;
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    font-size: larger;
+    border: none;
+    color: rgb(255, 0, 217);
+}
+
+/* newArrivalCss part */
+
+#newArrival {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    gap: 10px;
+    margin: 10px;
+    padding: 10px;
+    width: 80%;
+    margin: auto;
+}
+
+#newArrival>div>img {
+    width: 70%;
+    padding: 30px;
+    border: 1px solid green;
+    margin-top: 10px;
+
+}
+
+#newArrival>div>p {
+    padding: 10px;
+}
+
+#newArrival>div {
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 5px;
+}
+
+#newArrival>div>button {
+    background-color: rgb(220, 25, 138);
+    margin: 20px;
+    padding: 10px;
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    font-size: larger;
+    border: none;
+    color:black;
+}
