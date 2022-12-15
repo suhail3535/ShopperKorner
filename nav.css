@@ -1,14 +1,14 @@
-/* navbar */
-*{
+/* navbar css */
+/* *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
+} */
 body{
   font-family: sans-serif;
   width: 100%;
   margin: auto;
-  border: 5px solid red;
+  border: 0px solid red;
 }
   #nav {
   display: flex;
@@ -20,7 +20,7 @@ body{
   height: 120px;
   position: sticky;
   background-color: snow;
-  border: 3px solid blue;
+  border: px solid blue;
   margin-top: 30px;
 }
 
@@ -30,8 +30,6 @@ body{
   color: grey;
   text-decoration: none;
 }
-
-
 
 #nav>div>input {
   border: 3px solid rgb(255, 255, 0);
@@ -47,6 +45,7 @@ body{
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
+  border: 1px solid green;
   
 }
 #nav img {
@@ -62,6 +61,7 @@ body{
   padding: 0px;
   border-radius: 25px;
   border: none;
+  border: 1px solid green;
 }
 #search>i{
   background-color: yellow;
@@ -70,6 +70,7 @@ body{
   background-color: white;
   color: rgb(12, 12, 12);
   font-size: 20px;
+  border: 1px solid green;
 }
 
 .fa-solid:hover {
@@ -79,6 +80,7 @@ body{
 }
 .fa-solid:nth-child(1){
     color: black;
+    border: 1px solid green;
 }
 #favcount{
   background-color: rgb(255, 255, 0);
@@ -88,6 +90,7 @@ body{
   margin-left: 5px;
   margin-right: -5px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  border: 1px solid green;
 }
 #cartcount{
   background-color: rgb(255, 255, 0);
@@ -96,13 +99,14 @@ body{
   padding:2px 7px;
   margin-left: 5px;
   margin-right: -5px;
+  border: 1px solid green;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 
+/* fotter */
 
-
-/* *{
+ *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -626,4 +630,4 @@ form>input {
     grid-template-rows: auto;
 
   }
-} */
+} 
