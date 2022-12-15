@@ -37,6 +37,7 @@ postBtn.addEventListener("click", async () => {
     },1000) 
     location.reload();
   }
+
   }
 });
 ///counts

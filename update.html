@@ -186,26 +186,36 @@
         </p>
       </div>
     </div>
-  </div>
-  <div id="middle">
-    <img src="./Images/sideimage4.jpg" />
-    <div id="input">
-      <a href="admin.html"><button style="margin-top: 30px">Add Product</button></a>
-      <a href="delete.html"><button>Delete Product</button></a>
-      <a href="update.html"><button>Update Product</button></a>
-      <div id="form">
-        <form>
-          <input type="mail" id="id" placeholder="Product ID" />
-          <input type="text" id="title" placeholder="Enter Title " />
-          <input type="mail" id="Description" placeholder="Enter Description" />
-          <input type="number" id="prise" placeholder="Enter prise" />
-          <input type="text" id="avatar" placeholder="Enter Avatar URL" />
-          <p style="color: black; margin-top: 35px">
-            Note: Product details will get updated in the site, make sure
-            before updating details.
-          </p>
-          <input style="font-size: 18px; width: 94%" type="submit" id="submit" value="Click to Remove Product" />
-        </form>
+
+  
+
+    <div id="middle">
+      <img src="sideimage4.jpg" />
+      <div id="input">
+        <a href="admin.html"
+          ><button style="margin-top: 30px">Add Product</button></a
+        >
+        <a href="delete.html"><button>Delete Product</button></a>
+        <a href="update.html"><button>Update Product</button></a>
+        <div id="form">
+          <form>
+            <input type="mail" id="updateId" placeholder="Product ID" />
+            <input type="text" id="updateDes" placeholder="Enter Description" />
+            <input type="number" id="updatePrice" placeholder="Enter price" />
+            <input type="number" id="updatePrev" placeholder="Prev Price" />
+            <input type="text" id="updateImg" placeholder="Enter Avatar URL" />
+            <p style="color: black; margin-top: 35px">
+              Note: Product details will get updated in the site, make sure
+              before updating details.
+            </p>
+            <input
+              style="font-size: 18px; width: 94%"
+              type="button"
+              id="updateBtn"
+              value="Update Product"
+            />
+          </form>
+        </div>
       </div>
     </div>
   </div>
@@ -311,21 +321,25 @@
         </div>
       </div>
     </div>
-  </div>
-  <div id="copyright">
-    Copyright © 2014-2022 Shopper Korner. All Rights Reserved.
-  </div>
-  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-  <script>
-    var typed = new Typed("#auto1", {
-      strings: ["Welcome Back !!"],
-      typeSpeed: 60,
-      backSpeed: 60,
-      loop: true,
-    });
-  </script>
-  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
-</body>
 
+  
+    <div id="copyright">
+      Copyright © 2014-2022 Shopper Korner. All Rights Reserved.
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+      var typed = new Typed("#auto1", {
+        strings: ["Welcome Back !!"],
+        typeSpeed: 60,
+        backSpeed: 60,
+        loop: true,
+      });
+    </script>
+ 
+  
+  </body>
 </html>
+   <script src="./Script/update.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+

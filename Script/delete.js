@@ -12,8 +12,7 @@ deleteBtn.addEventListener("click", async () => {
         headers: {
           "Content-Type": "application/json",
         },
-      }
-    );
+      
     if (res.ok) {
       deletecount++;
         localStorage.setItem("deletecount",deletecount);
@@ -24,6 +23,7 @@ deleteBtn.addEventListener("click", async () => {
 
     }else{
       alert("ProductID Not Available❌")
+
     }
    
   } catch (error) {
