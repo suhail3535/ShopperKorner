@@ -30,15 +30,15 @@
 }
 
 #super>div>button {
-    background-color: rgb(30, 248, 252);
+    background-color: rgba(241, 236, 222, 0.716);
     margin: 20px;
     padding: 10px;
-    width: 150px;
-    height: 50px;
+    /* width: 150px; */
+    height: 40px;
     border-radius: 10px;
-    font-size: larger;
+   
     border: none;
-    color: rgb(255, 0, 217);
+    color:black;
 }
 
 /* newArrivalCss part */

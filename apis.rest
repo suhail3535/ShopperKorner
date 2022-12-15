@@ -1,0 +1,5 @@
+### Get all Product Data
+GET https://636a3f79b10125b78fd51599.mockapi.io/products
+
+### Delete Products
+DELETE https://636a3f79b10125b78fd51599.mockapi.io/products/24

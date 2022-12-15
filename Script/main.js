@@ -1,4 +1,4 @@
-
+// Slider code(Crausal code)
 let prev = document.getElementById("prev");
 let next = document.getElementById("next");
 let arr = ["Images/1.jpg", "Images/2.jpg", "Images/3.jpg", "Images/4.jpg","Images/5.jpg", "Images/6.jpg"]
@@ -29,7 +29,7 @@ function slides() {
 }
 setInterval(slides, 2000);
 
-
+// landing page fetch API CODE
 
     let bag = [];
     let url = "https://636a3f79b10125b78fd51599.mockapi.io/products"
@@ -67,14 +67,15 @@ setInterval(slides, 2000);
             dis.innerText = element.desc;
             let cost = document.createElement("h4");
             cost.innerText = "Price" + " :-$"+ element.price;
-            // let rat = document.createElement("h4");
-            // rat.innerText = "Rating" + "  " + element.rating.rate
+          
             let button = document.createElement("button")
-            button.innerText = "Add To Cart"+" 🛒"
+            button.innerText = "Add To Cart" + " 🛒";
             button.addEventListener("click", function () {
                 addData("add", element)
-})
-            div.append(img,dis, cost,button)
+            })
+            let fav_btn = document.createElement("button")
+            fav_btn.innerText = "Fav"+" ❤️"
+            div.append(img,dis, cost,button,fav_btn)
             document.querySelector("#container").append(div);
 
         })

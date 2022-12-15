@@ -8,19 +8,29 @@ body{
 }
 .fa-solid {
   background-color: white;
-  color: black;
-  font-size: 30px;
+  color: rgb(12, 12, 12);
+  font-size: 20px;
 }
 
 .fa-solid:hover {
   background-color: white;
-  color: yellow;
+  color: rgb(255, 255, 0);
   font-size: 30px;
 }
 
 
 #search{
-  background-color: white;
+  background-color: yellow;
+  width: 13%;
+  height: 57px;
+  position: relative;
+  top: -59px;
+ right: -279px;
+  padding: 0px;
+  border-radius: 25px;
+}
+#search>i{
+  background-color: yellow;
 }
 #email{
   height: 55px;
@@ -28,18 +38,18 @@ body{
 
 h1{ color:teal}
   #favcount{
-  background-color: red;
+  background-color: rgb(255, 255, 0);
   border-radius: 50%;
-  font-size: 25px;
+  font-size: 20px;
   padding:3px 7px;
   margin-left: 5px;
   margin-right: -5px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 #cartcount{
-  background-color: red;
+  background-color: rgb(255, 255, 0);
   border-radius: 50%;
-  font-size: 25px;
+  font-size: 20px;
   padding:2px 7px;
   margin-left: 5px;
   margin-right: -5px;
@@ -61,7 +71,7 @@ h1{ color:teal}
 #nav a {
   font-size: 25px;
   padding: 10px;
-  color: black;
+  color: grey;
   text-decoration: none;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
  
@@ -72,7 +82,8 @@ h1{ color:teal}
 #nav>div>input {
   border: 3px solid yellow;
   padding: 2%;
-  width: 500px;
+  margin-top: 50px;
+  width: 650px;
   border-radius: 50px;
   font-size: 25px;
 }
@@ -407,7 +418,6 @@ form>input {
 #bottomlast p {
   color: rgb(120, 115, 115);
   padding: 7px;
-
 }
 #ft_hed{
   margin-left: -10px;
@@ -444,6 +454,7 @@ form>input {
   justify-content: center;
   align-items: center;
   height: 55px;
+
 }
 
 #scan>div>img:hover {
