@@ -24,5 +24,9 @@ postBtn.addEventListener("click", async () => {
       body: JSON.stringify(obj),
     }
   );
-  console.log(res)
+  if(res.ok) {
+    setTimeout(() => {
+        swal("Item Added", "Item Added Successfully", "success");
+    }, 1000);
+  }
 });
