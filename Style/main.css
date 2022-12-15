@@ -63,6 +63,7 @@ li:hover{
     color: black;
 }
 
+
 /* Slider part */
 #topsection {
     border: 0px solid blue;
@@ -116,6 +117,7 @@ li:hover{
 }
 
 /* slider part end */
+
 
 /* static part */
 #staticpart {
@@ -194,5 +196,7 @@ li:hover{
 
 #fotterStatic>img {
     width: 100%;
-
 }
+
+
+/* ***footerPart*** */
