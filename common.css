@@ -1,0 +1,147 @@
+#bottom1 {
+    display: flex;
+    margin: auto;
+    margin-top: 50px;
+    width: 90%;
+    text-align: center;
+    background-color: whitesmoke;
+    padding: 2%;
+    margin-bottom: 50px;
+    border-radius: 5px;
+  
+  
+  }
+  
+  #bottom1>div {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 35px 0px 0px 0px;
+  
+  }
+  
+  #bottom1>div:nth-child(1) {
+    width: 26%;
+  }
+  
+  #bottom1>div:nth-child(1)>img {
+    width: 90%;
+    height: 40%;
+  }
+  
+  #bottom1 img {
+    width: 40%;
+    height: 25%;
+    margin-bottom: 10px;
+  }
+  
+  #bottom1>div>h3:hover {
+    color: orange;
+  }
+  
+  #bottom {
+    margin: auto;
+    width: 95%;
+    padding: 2%;
+    background-color: whitesmoke;
+    border-radius: 5px;
+  }
+  
+  #b1>div {
+    display: flex;
+    align-items: center;
+    margin-top: 35px;
+  }
+  
+  #b1>div>p {
+    color: rgb(120, 115, 115);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-right: 20px;
+  }
+  
+  form>input {
+    width: 300px;
+    font-size: 15px;
+    height: 50px;
+  
+  }
+  
+  #sub {
+    background-color: black;
+    color: white;
+    width: 150px;
+    padding: 1%;
+    border-radius: 0%;
+    height: 56px;
+  }
+  
+  #b1 {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  #b1 img {
+    width: 30px;
+    height: 30px;
+    margin-right: 15px;
+  }
+  
+  #b1>div:nth-child(2) {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  #bottomlast {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto;
+    gap: 0;
+    margin: auto;
+    width: 95%;
+    padding: 2%;
+    background-color: whitesmoke;
+    border-radius: 5px;
+  }
+  
+  #bottomlast p {
+    color: rgb(120, 115, 115);
+  
+  }
+  
+  #scan {
+    display: flex;
+  }
+  
+  #scan img {
+    width: 120px;
+    height: 120px;
+  
+  }
+  
+  #scan>div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #scan>div:nth-child(2)>img {
+    height: 60px;
+  }
+  
+  #copyright {
+    background-color: black;
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    height: 55px;
+  }
+  
+  #scan>div>img:hover {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+  
+  #socialmedia>img:hover {
+    width: 50px;
+    height: 50px;
+  }
