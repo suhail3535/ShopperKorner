@@ -5,12 +5,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Style/main.css">
+    <link rel="stylesheet" href="/Style/main.css">
     <title>homepage</title>
 </head>
 
 <body>
-    <div id="main"> </div>
+    <div id="nav">
+        <img id="home" src="/Images/mainlogo.jpeg">
+        <div><input placeholder="Search">
+            <button id="search"><i class="fa-sharp fa-solid fa-magnifying-glass"></i></button>
+        </div>
+
+        <div id="signin">
+            <i class="fa-solid fa-user"></i>
+            <a href="/register.html">sign In</a>
+        </div>
+        <div id="fav"> <i class="fa-solid fa-heart fa-beat"></i>
+            <spam id="favcount">0</spam><a href="fav.html">Favorites</a>
+        </div>
+        <div id="cart">
+            <i class="fa-sharp fa-solid fa-cart-shopping"></i>
+            <spam id="cartcount">0</spam><a href="cart.html">cart <span></span></a>
+        </div>
+
+
+
+
+
+    </div>
 
 
     <!-- special and new arrival -->
@@ -21,7 +43,7 @@
         </div>
         <div> <a href="superdeal.html">
                 <h3>SUPER DEALS</h3>
-            </a></div>  
+            </a></div>
         <div>
             <h3> APP ONLY</h3>
         </div>
@@ -44,25 +66,135 @@
                 <li>Drones, Toys & Hobbies</li><br>
                 <li>Motor & Car Electronics</li><br>
                 <li>Men's Fashion</li><br>
-               </ul>
-            </div>
-      <!-- slider_part -->
-            <div id="slider">
+            </ul>
+        </div>
+        <!-- slider_part -->
+        <div id="slider">
             <a id="prev" onclick="plusSlides(-1)">&#10094;</a>
             <img id="image" src="imagees/img1.jpg" alt="">
             <a id="next" onclick="plusSlides(1)">&#10095;</a>
-            </div>
+        </div>
     </div>
 
 
 
-    <!-- statices part -->
+    <!-- statices part bottom -->
 
-    <div id="staticpart">
+    <!-- <div id="staticpart">
         <img src="/Images/static.png" alt="">
-    </div>
+    </div> -->
     <div id="container"></div>
-    <div id="fotterStatic"> <img src="/Images/img.9.png" alt=""> </div>
+    <!-- <div id="fotterStatic"> <img src="/Images/img.9.png" alt=""> </div> -->
+
+    <!-- ****footer_part*** -->
+    <div id="bottom1">
+        <div>
+          <img src="/Images/mainlogo.jpeg"/>
+          <h3>AFFORDABLED QUALITY FUN SHOPPING</h3>
+        </div>
+        <div>
+          <img
+            src="https://img.icons8.com/external-chloe-kerismaker/2x/external-Ecommerce-black-friday-chloe-kerismaker.png"
+          />
+          <h3>High Quality Selection</h3>
+          <p>Total product quality control for peace of mind</p>
+        </div>
+        <div>
+          <img src="https://img.icons8.com/plasticine/2x/good-quality.png" />
+          <h3>Affordable Prices</h3>
+          <p>Factory direct prices for maximum savings</p>
+        </div>
+        <div>
+          <img src="https://img.icons8.com/cute-clipart/2x/flower-delivery.png" />
+          <h3>Express Shipping</h3>
+          <p>Fast, reliable delivery from global warehouses</p>
+        </div>
+        <div>
+          <img src="https://img.icons8.com/clouds/2x/starburst-shape.png" />
+          <h3>Worry-free After-sales</h3>
+          <p>Instant access to professional support</p>
+        </div>
+      </div>
+    <div id="bottom">
+        <div id="b1">
+            <div>
+                <p>Newsletter</p>
+                <form id="point">
+                    <input id="email" type="email" placeholder="Enter Email to Get 50 Points">
+                    <input id='sub' type="submit" value="subscribe">
+                </form>
+                <!-- <input type="email" placeholder="Enter Email to Get 50 Points">
+                <button>Subcribe</button> -->
+            </div>
+            <div id="socialmedia">
+                <img onclick="facebook()" src="https://img.icons8.com/cute-clipart/2x/facebook-new.png">
+                <img onclick="massenger()" src="https://img.icons8.com/ios-filled/2x/facebook-messenger.png">
+                <img onclick="youbute()" src="https://img.icons8.com/plasticine/2x/youtube-play--v2.png">
+                <img onclick="picksart()" src="data:image/png;base64,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">
+                <img onclick="vk()" src="https://img.icons8.com/color/2x/vk-circled.png">
+                <img onclick="insta()" src="https://img.icons8.com/fluency/2x/instagram-new.png">
+                <img onclick="twitter()" src="https://img.icons8.com/color/2x/twitter--v3.png">
+                <img onclick="blog()" src="https://img.icons8.com/ios-filled/2x/blogger.png">
+                <img onclick="t()"
+                    src="https://img.icons8.com/external-others-inmotus-design/2x/external-T-virtual-keyboard-others-inmotus-design-2.png">
+            </div>
+        </div>
+    </div>
+    <div id="bottomlast">
+        <div>
+            <h3>Company Information</h3>
+            <p> About Us</p>
+            <p>Top Searches</p>
+            <p>Privacy Policy</p>
+            <p>Terms and Conditions</p>
+            <p> Intellectual Property Policy</p>
+            <p> Testimonials</p>
+            <p>Contact Us</p>
+            <p> Report Security Issue</p>
+            <p>Sell on Gearbest</p>
+            <p> Cookies Policy</p>
+            <p>Top Brands</p>
+            <p> Gearbest Official Blog</p>
+        </div>
+        <div>
+            <h3>Customer Service</h3>
+            <p> Shipping Information</p>
+            <p>My Favorites</p>
+            <p>FAQ For Newsletter Subscription</p>
+            <p>My Points</p>
+            <p> Warranty and Return</p>
+            <p> Payment Methods</p>
+            <p>Deposit Expansions</p>
+            <p> Report Security Issue</p>
+            <p>FAQ & Support</p>
+            <p>Sitemap</p>
+            <p>Gearbest Wallet Instruction</p>
+            <p>FAQs about COVID-19</p>
+        </div>
+        <div>
+            <h3>Other Bussiness</h3>
+            <p> Partnership Programs</p>
+            <p>Associate Program</p>
+
+        </div>
+        <div>
+            <h3 id="ft_hed">Download App! </h3>
+            <p id="para">Save $3 with App & New User Only</p>
+            <div id="scan">
+                <div><img
+                        src="https://image.shutterstock.com/image-vector/sample-qr-code-icon-vector-260nw-529327996.jpg">
+                </div>
+                <div>
+                    <img onclick="Apple()"
+                        src="data:image/png;base64,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">
+                    <img onclick="PlayStore()"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSc9chPijPwPNFxaUosqVqspSNK1Q-HmJaXCQ&usqp=CAU">
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div id="copyright">Copyright © 2014-2022 Gearbest.com. All Rights Reserved.</div>
 </body>
 <script src="/Script/main.js"></script>
 
