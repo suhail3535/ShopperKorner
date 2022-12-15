@@ -13,8 +13,10 @@ deleteBtn.addEventListener("click", async () => {
         },
       }
     );
-    if (res.ok) {
-        swal("Deleted", "Item Deleted Successfully", "success");
+    if(res.ok) {
+      setTimeout(() => {
+          swal("Item Deleted", "Item Deleted Successfully", "success");
+      }, 1000);
     }
    
   } catch (error) {
