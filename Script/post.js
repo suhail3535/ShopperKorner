@@ -13,6 +13,7 @@ postBtn.addEventListener("click", async () => {
   obj.price = price;
   obj.prevPrice = prevPrice;
 
+//   res
   let res = await fetch(
     "https://636a3f79b10125b78fd51599.mockapi.io/products",
     {
