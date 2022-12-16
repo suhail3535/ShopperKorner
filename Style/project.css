@@ -1,0 +1,363 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+h1{
+    color:blueviolet;
+}
+#main_container{
+    border: 1px solid red;
+    width: 80%;
+    margin: auto;
+    height: 700px;
+}
+#main_container h2{
+    font-weight:500;
+    margin-left: 20px;
+}
+/* --------------product area ----------------------------*/
+#cart_products{
+    display: flex;
+    justify-content: space-between;
+}
+/* -------------------items------------------- */
+#product_details{
+    border: 1px solid blue;
+    margin-top: 20px;
+    width: 64%;
+}
+.empty{
+    width: 100%;
+}
+.empty img{
+    width: 100%;
+}
+.cards{
+    border: 1px solid rgba(199, 195, 195, 0.806);
+    margin-bottom: 10px;
+    
+}
+.div_box{
+    border: px solid red;
+    display: flex;
+    justify-content: space-between;
+}
+.div1{
+    border: px solid blue;
+    width: 20%;
+    margin: 10px 0px 10px 25px;
+}
+.div1 img{
+    border: px solid green;
+    width: 90%;
+}
+
+.div2{
+    border: px solid rgb(165, 17, 179);
+    width: 68%;
+    margin: 10px 30px 10px 0px;
+}
+.images_div{
+    display: flex;
+    justify-content: space-between;
+    border: px solid blue;
+    height: 150px;
+}
+.images_div img{
+   width: 24%;
+}
+.product_name{
+    font-weight: 600;
+}
+.product_price{
+    font-weight: 600;
+}
+.cards button{
+    width: 97%;
+    height: 50px;
+    background-color:white ;
+    color: #faa619;
+    border: none;
+    border-top: 1px solid rgba(199, 195, 195, 0.806);
+    font-size: large;
+    margin-left: 1%;
+}
+.cards button:hover{
+    background-color: #faa619;
+    color: white;
+    cursor: pointer;
+}
+
+.cards button:active{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+/* ----------------------payment---------------------------- */
+#payment_details{
+   
+    width: 34%;
+    height: 500px;
+    margin-top: 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+#total{
+    border: px solid brown;
+    margin: 40px;
+}
+#total>p{
+    font-size: 20px;
+}
+#total>p>span{
+    margin-left: 30px;
+}
+
+#payment_option{
+    border: px solid rgb(157, 5, 217);
+    margin: 40px;
+    
+}
+#payment_option label{
+    margin-top: 15px;
+    font-size: 18px;
+    
+}
+#payment_option select{
+    margin-top: 10px;
+    width: 60%;
+    height: 40px;
+}
+
+/* total price */
+#total_price{
+    border: px solid black;
+    margin-left: 60%;
+}
+#shipping{
+    border: px solid black;
+    margin-left: 51%;
+    color:crimson;
+    font-weight: 600;
+}
+/* payment option */
+ #show_pay{
+    border: px solid red;
+    margin-top: 15px;
+    height: 100%;
+    
+}
+.upi_img{
+    width: 12%;
+}
+.user_upi{
+    width: 70%;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    margin-left: 10px;
+}
+
+/* card */
+.card_div{
+    display: flex;
+
+}
+.card_img{
+    border: px solid red;
+}
+.card_img img{
+    margin-top: -10px;
+    width: 90%;
+    height: 80%;
+}
+.card_input{
+    /* width: 98%; */
+    margin-top: 10px;
+    margin-bottom: 10px; 
+}
+.cvv_input{
+    /* width: 98%; */
+    margin-bottom: 10px; 
+}
+.exp_date{
+    /* width: 70%; */
+    margin-bottom: 20px; 
+}
+
+
+
+/* checkout btn */
+.checkout{
+    width: 50%;
+    border: none;
+    background-color: #faa619;
+    color: #fff;
+    height: 50px;
+    font-size: larger;
+    margin: 10px 20px 10px 100px;
+    border-radius: 9px;
+}
+#checkout2{
+    width: 50%;
+    border: none;
+    background-color:  #6fd649;
+    color: #fff;
+    height: 40px;
+    font-size: larger;
+    margin: 10px 20px 10px 100px;
+    border-radius: 9px;
+}
+#checkout2:hover{
+    background-color: #6fd649;
+    cursor: pointer;
+    
+}
+#checkout2:active{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    
+}
+
+
+
+/* popup */
+/* .container{
+    width: 100%;
+    height: 100vh;
+    background: #3c5077;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+.btn{
+    padding: 10px 60px;
+    background: #fff;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    font-size: 22px;
+    font-weight: 500;
+    border-radius: 30px;
+}
+.popup{
+    width: 400px;
+    background: rgb(7, 185, 240);
+    border-radius: 6px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+}
+.popup img{
+    width: 100px;
+    margin-top: -50px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.popup h2{
+    font-size: 38px;
+    font-weight: 500;
+    margin: 30px 0 10px;
+}
+.popup p{
+    color: #fff;
+    font-size: 20px;
+}
+.popup button{
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px 0;
+    background: #6fd649;
+    color: #fff;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+.open-popup{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%,-50%) scale(1);
+}
+
+
+
+
+
+
+/* CSS */
+#show_pay button {
+  background-color: initial;
+  background-image: linear-gradient(-180deg, #FF7E31, #E62C03);
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Inter,-apple-system,system-ui,Roboto,"Helvetica Neue",Arial,sans-serif;
+  height: 25px;
+  line-height: 40px;
+  outline: 0;
+  overflow: hidden;
+  padding: 0 20px 40px;
+  pointer-events: auto;
+  position: relative;
+  text-align: center;
+  touch-action: manipulation;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: top;
+  white-space: nowrap;
+  width: 40%;
+  /* z-index: 9; */
+  border: 0;
+  transition: box-shadow .2s;
+  font-size: 18px;
+  
+  
+}
+
+#show_pay button:hover {
+  box-shadow: rgba(253, 76, 0, 0.5) 0 3px 8px;
+}
+#show_pay button:active{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+#offer{
+    display: flex;
+    margin: 0px 10px 0px 10px;
+    justify-content: space-between;
+}
+#offer_img{
+    border: px solid red;
+    width: 27%;
+}
+#offer_img img{
+    width: 100%;
+}
+#offer_msg{
+    width: 70%;
+    border: px solid black;
+}
+#offer_msg p{
+    color: rgb(166, 166, 166);
+}
+
+.empty_img{
+    cursor: pointer;
+}
+
+.login{
+    visibility: hidden;
+}
+
+.username{
+    visibility: hidden;
+}
