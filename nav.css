@@ -1,13 +1,22 @@
+<<<<<<< HEAD
 *{
+=======
+/* navbar css */
+/* *{
+>>>>>>> 4e9b4a905cf9a18b1a4445a92ed687c376b408f6
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
+} */
 body{
   font-family: sans-serif;
   width: 100%;
   margin: auto;
+<<<<<<< HEAD
   /* border: 5px solid red; */
+=======
+  border: 0px solid red;
+>>>>>>> 4e9b4a905cf9a18b1a4445a92ed687c376b408f6
 }
   #nav {
   display: flex;
@@ -19,7 +28,11 @@ body{
   height: 120px;
   position: sticky;
   background-color: snow;
+<<<<<<< HEAD
   /* border: 3px solid blue; */
+=======
+  border: px solid blue;
+>>>>>>> 4e9b4a905cf9a18b1a4445a92ed687c376b408f6
   margin-top: 30px;
 }
 
@@ -29,8 +42,6 @@ body{
   color: grey;
   text-decoration: none;
 }
-
-
 
 #nav>div>input {
   border: 3px solid rgb(255, 255, 0);
@@ -46,6 +57,7 @@ body{
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
+  border: 1px solid green;
   
 }
 #nav img {
@@ -61,6 +73,7 @@ body{
   padding: 0px;
   border-radius: 25px;
   border: none;
+  border: 1px solid green;
 }
 #search>i{
   background-color: yellow;
@@ -69,6 +82,7 @@ body{
   background-color: white;
   color: rgb(12, 12, 12);
   font-size: 20px;
+  border: 1px solid green;
 }
 
 .fa-solid:hover {
@@ -78,6 +92,7 @@ body{
 }
 .fa-solid:nth-child(1){
     color: black;
+    border: 1px solid green;
 }
 #favcount{
   background-color: rgb(255, 255, 0);
@@ -87,6 +102,7 @@ body{
   margin-left: 5px;
   margin-right: -5px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  border: 1px solid green;
 }
 #cartcount{
   background-color: rgb(255, 255, 0);
@@ -95,15 +111,29 @@ body{
   padding:2px 7px;
   margin-left: 5px;
   margin-right: -5px;
+  border: 1px solid green;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+<<<<<<< HEAD
 #bottom {
   margin: auto;
   width: 80%;
   padding: 2%;
   background-color: whitesmoke;
   border-radius: 5px;
+=======
+
+/* fotter */
+
+ *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: sans-serif;
+>>>>>>> 4e9b4a905cf9a18b1a4445a92ed687c376b408f6
 }
 
 
@@ -233,3 +263,142 @@ form>input {
 }
 
 
+<<<<<<< HEAD
+=======
+
+  }
+
+  #nav>div>input {
+
+    width: 100px;
+
+  }
+
+  #nav img {
+    width: 200px;
+    height: 80%;
+  }
+
+  #nav a {
+    font-size: 12px;
+  }
+
+  #collection {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  #superdeal {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  #recommended {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  #new {
+    flex-wrap: wrap;
+  }
+  #newsub {
+    display: flex;
+    justify-content: space-evenly;
+  
+  }
+  #newsub>div {
+    width:45%;
+    justify-content: space-evenly;
+    margin-top: 20px;
+
+  }
+  #bottom1 {
+    flex-wrap: wrap;
+  }
+  
+  #bottom1>div {
+    width: 45%;
+  
+  }
+  #b1 {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  #bottomlast {
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: auto;
+
+  }
+}
+
+@media screen and (min-width:0px) and (max-width:499px) {
+  #top3 {
+    grid-template-columns: repeat(2, 1fr);
+
+
+  }
+
+  #nav>div>input {
+
+    width: 50px;
+
+  }
+
+  #nav img {
+    width: 100px;
+    height: 60%;
+  }
+
+  #nav a {
+    font-size: 8px;
+  }
+
+  #collection {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #superdeal {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #recommended {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #new {
+    flex-wrap: wrap;
+  }
+
+  #newsub {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  #new {
+    flex-wrap: wrap;
+  }
+  #newsub {
+    display: flex;
+    justify-content: space-evenly;
+  
+  }
+  #newsub>div {
+    width:45%;
+    justify-content: space-evenly;
+    margin-top: 20px;
+
+  }
+  #bottom1 {
+    flex-wrap: wrap;
+  }
+  
+  #bottom1>div {
+    width: 45%;
+  
+  }
+  #b1 {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  #bottomlast {
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: auto;
+
+  }
+} 
+>>>>>>> 4e9b4a905cf9a18b1a4445a92ed687c376b408f6

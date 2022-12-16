@@ -29,7 +29,7 @@ fetch(url).then((res) => res.json())
         let div = document.createElement("div");
         let img = document.createElement("img");
         img.setAttribute("src", element.image)
-        let title = document.createElement("h5");
+        let title = document.createElement("P");
         title.innerText =  element.head;
        let cost = document.createElement("h4");
         cost.innerText = "Price" + " :- " + element.price;
@@ -38,8 +38,10 @@ fetch(url).then((res) => res.json())
         button.innerText = "Add To Cart"
         button.addEventListener("click", function () {
             addData("add", element)
-})
-        div.append(img, title, cost,button)
+        })
+        let fav_btn = document.createElement("button")
+        fav_btn.innerText = "Fav"+" 🛒"
+        div.append(img, title, cost,button,fav_btn)
         document.querySelector("#super").append(div);
 
     })
