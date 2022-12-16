@@ -27,7 +27,7 @@ function slides() {
         i = 0;
     }
 }
-setInterval(slides, 2000);
+setInterval(slides, 1500);
 
 // landing page fetch API CODE
 
