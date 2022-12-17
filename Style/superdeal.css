@@ -10,6 +10,7 @@
     margin: auto;
 }
 
+
 #super>div>img {
     width: 70%;
     padding: 30px;
@@ -135,6 +136,8 @@ body {
 
 #nav img {
     width: 250px;
+    border: 0px solid blue;
+    height: 60px;
 }
 
 #search {

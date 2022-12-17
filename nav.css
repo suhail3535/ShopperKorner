@@ -12,11 +12,7 @@ body{
   font-family: sans-serif;
   width: 100%;
   margin: auto;
-<<<<<<< HEAD
-  /* border: 5px solid red; */
-=======
   border: 0px solid red;
->>>>>>> 4e9b4a905cf9a18b1a4445a92ed687c376b408f6
 }
   #nav {
   display: flex;
