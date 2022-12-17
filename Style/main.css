@@ -60,8 +60,10 @@
 }
 
 li:hover {
-    color: red;
+    color:black;
     position: relative;
+ background-color: white;
+ 
    
 }
 
