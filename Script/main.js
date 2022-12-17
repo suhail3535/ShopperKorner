@@ -61,7 +61,7 @@ fetch(url).then((res) => res.json())
 
    function search() {
     let p = document.querySelector("input").value;
-    console.log(p)
+  
     let newData = bag.filter(function (ele) {
         return ele.desc.toLowerCase().includes(p.toLocaleLowerCase());
     });
@@ -80,12 +80,13 @@ function displayTable(data) {
         dis.innerText = element.desc;
         let cost = document.createElement("h4");
         cost.innerText = "Price" + " :-$" + element.price;
-
         let button = document.createElement("button")
         button.innerText = "Add To Cart" + " 🛒";
+      
         button.addEventListener("click", function () {
             addData("Cart", element)
             alert("item added in Cart")
+           
         })
         let fav_btn = document.createElement("button")
         fav_btn.innerText = "Fav" + " ❤️";
