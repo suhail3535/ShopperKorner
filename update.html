@@ -18,6 +18,7 @@
       border-radius: 5px;
       margin-top: 50px;
     }
+
     #sections {
       margin: auto;
       margin-top: 50px;
@@ -27,6 +28,7 @@
       grid-template-rows: auto;
       gap: 10px;
     }
+
     #sections > div {
       border-radius: 50px;
       height: 120px;
@@ -36,36 +38,45 @@
       padding: 15px;
       font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     }
+
     #sections > div:nth-child(1) {
       background-color: yellowgreen;
     }
+
     #sections > div:nth-child(2) {
       background-color: orange;
     }
+
     #sections > div:nth-child(3) {
       background-color: pink;
     }
+
     #sections > div:nth-child(4) {
       background-color: rgb(181, 63, 245);
     }
+
     #sections > div > div > img {
       width: 80px;
       height: 70px;
     }
+
     #sections > div > div:nth-child(1) {
       display: flex;
       align-items: center;
     }
+
     #sections > div > div spam {
       font-size: 20px;
       font-weight: 700;
     }
+
     #middle {
       display: flex;
       justify-content: space-between;
       margin-top: 70px;
       padding: 50px;
     }
+
     #form > form > input {
       margin: auto;
       width: 90%;
@@ -78,7 +89,8 @@
       box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
         rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
     }
-    form > input:nth-child(4) {
+
+    form > input:nth-child(7) {
       background-color: red;
       height: 50px;
       width: 40%;
@@ -86,26 +98,31 @@
       font-weight: 600;
       margin: auto;
     }
-    form > input:nth-child(4):hover {
+
+    form > input:nth-child(7):hover {
       box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
         rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
       background-color: rgb(111, 107, 244);
       color: black;
     }
+
     #middle img {
       width: 600px;
       height: 500px;
       border-radius: 50px;
     }
+
     #input {
       background-color: rgb(150, 179, 190);
       border-radius: 50px;
       padding: 2%;
       width: 40%;
     }
+
     #input > a {
       margin-left: 15px;
     }
+
     #input button {
       font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
         "Lucida Sans", Arial, sans-serif;
@@ -116,6 +133,7 @@
       border: 0ch;
       color: white;
     }
+
     #input button:hover {
       box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
         rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
@@ -124,26 +142,9 @@
       transition: 0.2 ease-in-out;
     }
   </style>
-  <body>
-     <!-- nabar -->
-     <!-- <div id="nav">
-      <a href=""><img id="home" src="/Images/mainlogo.jpeg"></a>
-        <div><input oninput="search()" type="text" placeholder="Search">
-               <button id="search"><i class="fa-sharp fa-solid fa-magnifying-glass"></i></button>
-        </div>
 
-      <div id="signin">
-          <i class="fa-solid fa-user"></i>
-          <a href="/register.html">sign In</a>
-      </div>
-      <div id="fav"> <i class="fa-solid fa-heart fa-beat"></i>
-          <spam id="favcount">0</spam><a href="fav.html">Favorites</a>
-      </div>
-      <div id="cart">
-          <i class="fa-sharp fa-solid fa-cart-shopping"></i>
-          <spam id="cartcount">0</spam><a href="/card.html">cart <span></span></a>
-      </div> -->
-   <!-- end -->
+  <body>
+    
     <div id="welcome">
       <h1 style="margin-left: 30px">Hi, Admin <spam id="auto1"></spam></h1>
     </div>
@@ -176,29 +177,42 @@
           <p><spam id="updated">21 </spam> This Month</p>
         </div>
       </div>
-    </div>
-    <div id="middle">
-      <img src="./Images/sideimage3.png" />
-      <div id="input">
-        <a href="admin.html"
-          ><button style="margin-top: 30px">Add Product</button></a>
-        <a href="delete.html"><button>Delete Product</button></a>
-        <a href="update.html"><button>Update Product</button></a>
-        <div id="form">
-          <form>
-            <input type="text" id="name" placeholder="Enter Product Name" />
-            <input type="mail" id="deleteId" placeholder="Product ID" />
-            <p style="color: black; margin-top: 35px">
-              Note: Product will permananty removed from the site, make sure
-              before removing.
-            </p>
-            <input
-              style="font-size: 18px; width: 94%"
-              type="button"
-              id="submit"
-              value="Click to Remove Product"
-            />
-          </form>
+     </div>
+      <div id="middle">
+        <img src="./Images/sideimage4.jpg" />
+        <div id="input">
+          <a href="admin.html"
+            ><button style="margin-top: 30px">Add Product</button></a
+          >
+          <a href="delete.html"><button>Delete Product</button></a>
+          <a href="update.html"><button>Update Product</button></a>
+          <div id="form">
+            <form>
+              <input type="mail" id="updateId" placeholder="Product ID" />
+              <input
+                type="text"
+                id="updateDes"
+                placeholder="Enter Description"
+              />
+              <input type="number" id="updatePrice" placeholder="Enter price" />
+              <input type="number" id="updatePrev" placeholder="Prev Price" />
+              <input
+                type="text"
+                id="updateImg"
+                placeholder="Enter Avatar URL"
+              />
+              <p style="color: black; margin-top: 35px">
+                Note: Product details will get updated in the site, make sure
+                before updating details.
+              </p>
+              <input
+                style="font-size: 18px; width: 94%"
+                type="button"
+                id="updateBtn"
+                value="Update Product"
+              />
+            </form>
+          </div>
         </div>
       </div>
     </div>
@@ -339,11 +353,11 @@
         </div>
       </div>
     </div>
+
     <div id="copyright">
-      Copyright © 2014-2022 Shopper Korner.com. All Rights Reserved.
+      Copyright © 2014-2022 Shopper Korner. All Rights Reserved.
     </div>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <script src="./Script/delete.js"></script>
     <script>
       var typed = new Typed("#auto1", {
         strings: ["Welcome Back !!"],
@@ -352,10 +366,7 @@
         loop: true,
       });
     </script>
-
-  
   </body>
-  
-
 </html>
-  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="./Script/update.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>

@@ -8,21 +8,18 @@ fetch(url).then((res) => res.json())
         displayTable(data)
     });
 
-    function justSort() {
-    let sorted = document.querySelector("select").value;
-    if (sorted == "low to high") {
-        bag.sort((a, b) => a.price - b.price);
-    }
-    if (sorted == "high to low") {
-        bag.sort((a, b) => b.price - a.price);}
-        displayTable(bag); };
+  
+        
+// <....search function......>
     function search() {
-    let p = document.querySelector("input").value
+    let z = document.querySelector("input").value
     let newData = bag.filter(function (ele) {
-        return ele.desc.toLowerCase().includes(p.toLocaleLowerCase());
+        return ele.head.toLowerCase().includes(z.toLocaleLowerCase());
        });
     displayTable(newData)
 };
+// <...display main function......>
+
     function displayTable(data) {
     document.querySelector("#super").innerHTML = "";
     data.forEach(function (element) {
@@ -46,7 +43,7 @@ fetch(url).then((res) => res.json())
 
     })
 }
-
+// .<...add to cart and fav...>
     function addData(key, value) {
     mData = JSON.parse(localStorage.getItem(key)) || [];
     mData.push(value);

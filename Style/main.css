@@ -56,11 +56,15 @@
 
 #category:hover {
     background-color: rgb(197, 196, 255);
+   
 }
 
 li:hover {
-    color: red;
+    color:black;
     position: relative;
+ background-color: white;
+ 
+   
 }
 
 
@@ -70,7 +74,7 @@ li:hover {
 }
 
 
-/* Slider part */
+/* ..............Slider part.................. */
 #topsection {
     border: 0px solid blue;
     width: 80%;
@@ -125,7 +129,7 @@ li:hover {
 /* slider part end */
 
 
-/* static part */
+/* ...static part top section...*/
 #staticpart {
     border: 0px solid green;
     width: 80%;
@@ -191,7 +195,7 @@ li:hover {
     color: black;
 }
 
-/* ***navbaarpart*** */
+/* <...........navbaarpart...............> */
 
 body {
     font-family: sans-serif;
@@ -215,19 +219,21 @@ body {
 }
 
 #nav a {
-    font-size: 20px;
+    font-size: 15px;
     padding: 10px;
     color: grey;
     text-decoration: none;
+   border: 0px solid red;
 }
 
 #nav>div>input {
-    border: 3px solid rgb(255, 255, 0);
+    border: 1px solid black;
     padding: 2%;
     margin-top: 50px;
     width: 500px;
     border-radius: 50px;
-    font-size: 25px;
+    font-size: 15px;
+   
 }
 
 #nav>div {
@@ -247,37 +253,39 @@ body {
 #search {
     background-color: yellow;
     width: 13%;
-    height: 54px;
+    height: 39px;
     position: relative;
-    top: -56px;
-    right: -218px;
+    top: -40px;
+    right: -226px;
     padding: 0px;
     border-radius: 25px;
     border: none;
+    border: 0px solid red;
 }
 
 #search>i {
     background-color: yellow;
-    /* border: 1px solid green; */
+    border: 0px solid rgb(0, 109, 128);
+    height:10px
 }
 
 .fa-solid {
     background-color: white;
     color: rgb(12, 12, 12);
     font-size: 20px;
-    /* border: 1px solid green; */
+   border: 0px solid red;
 }
 
 .fa-solid:hover {
-    background-color: white;
+    background-color:yellow;
     color: rgb(255, 255, 0);
     font-size: 30px;
-    border: 1px solid green;
+    
 }
 
 .fa-solid:nth-child(1) {
     color: black;
-    /* border: 2px solid green; */
+    border: 0px solid green;
 }
 
 #favcount {
@@ -285,7 +293,7 @@ body {
     border-radius: 50%;
     font-size: 20px;
     padding: 3px 7px;
-    /* border: 1px solid green; */
+    border: 0px solid rgb(17, 0, 128);
     margin-left: 5px;
     margin-right: -5px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -296,7 +304,7 @@ body {
     border-radius: 50%;
     font-size: 20px;
     padding: 2px 7px;
-    /* border: 1px solid green; */
+    border: 0px solid rgb(17, 0, 128);
     margin-left: 5px;
     margin-right: -5px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;

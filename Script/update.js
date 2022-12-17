@@ -27,15 +27,17 @@ updateBtn.addEventListener("click", async () => {
   if (res.ok) {
     updateCount++;
     localStorage.setItem("updatecount", updateCount);
-    setTimeout(() => {
-      swal("Item Updated", "Item Updated Successfully", "success");
-    }, 1000);
+    alert("Product Updated Successfully✅");
+    location.reload()
+  }else{
+    alert("ProductId Invalid❌")
   }
 });
 
 let displaytotalcount = localStorage.getItem("totalcount") || 0;
 document.querySelector("#total").innerText = displaytotalcount;
 let displayupdatecount = localStorage.getItem("updatecount") || 0;
+console.log(displayupdatecount)
 document.querySelector("#updated").innerText = displayupdatecount;
 let displaypostcount = localStorage.getItem("postcount") || 0;
 document.querySelector("#added").innerText = displaypostcount;

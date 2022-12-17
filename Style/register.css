@@ -11,12 +11,16 @@ body {
 #topLogo {
     margin-top: 20px;
     height: 100px;
+    border: 0px solid green;
 }
 
-#topLogo>img {
+#topLogo>a>img {
     height: 100%;
-    width: 13%;
+    width: 20%;
+    border: 0px solid red;
+    margin-top: 20px;
 }
+
 
 #signInBody {
     height: auto;
@@ -39,10 +43,11 @@ a {
     text-decoration: none;
     color: grey;
     font-weight: bolder;
+    text-decoration: none;
 }
 
 a:hover {
-    border-bottom: 3px solid #ffda00;
+    border-bottom: 0px solid #ffda00;
     color: black;
 }
 

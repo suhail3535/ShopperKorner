@@ -12,13 +12,12 @@ deleteBtn.addEventListener("click", async () => {
         headers: {
           "Content-Type": "application/json",
         },
+      })
       
     if (res.ok) {
       deletecount++;
         localStorage.setItem("deletecount",deletecount);
-        setTimeout(()=>{
-          swal("Deleted", "Item Deleted Successfully", "success");
-        },1000)  ;
+      alert("Item Deleted")
     location.reload();
 
     }else{
