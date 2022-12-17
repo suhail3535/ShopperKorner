@@ -6,8 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Shopper Korner</title>
     <link rel="stylesheet" href="./Style/common.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
   </head>
   <style>
+    
+    
+
     #welcome {
       width: 100%;
       background-color: rgb(19, 174, 236);
@@ -16,7 +20,7 @@
       align-items: center;
       color: white;
       border-radius: 5px;
-      margin-top: 50px;
+      margin-top: 20px;
     }
     #sections {
       margin: auto;
@@ -125,6 +129,27 @@
     }
   </style>
   <body>
+    <!-- nabar -->
+    <div id="nav">
+      <a href=""><img id="home" src="/Images/mainlogo.jpeg"></a>
+        <div><input oninput="search()" type="text" placeholder="Search">
+               <button id="search"><i class="fa-sharp fa-solid fa-magnifying-glass"></i></button>
+        </div>
+
+      <div id="signin">
+          <i class="fa-solid fa-user"></i>
+          <a href="/register.html">sign In</a>
+      </div>
+      <div id="fav"> <i class="fa-solid fa-heart fa-beat"></i>
+          <spam id="favcount">0</spam><a href="fav.html">Favorites</a>
+      </div>
+      <div id="cart">
+          <i class="fa-sharp fa-solid fa-cart-shopping"></i>
+          <spam id="cartcount">0</spam><a href="/card.html">cart <span></span></a>
+      </div>
+   <!-- end -->
+
+  </div>
     <div id="welcome">
       <h1 style="margin-left: 30px">Hi, Admin <spam id="auto1"></spam></h1>
     </div>
