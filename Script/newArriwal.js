@@ -8,18 +8,12 @@ fetch(url).then((res) => res.json())
         displayTable(data)
     });
 
-    function justSort() {
-    let sorted = document.querySelector("select").value;
-    if (sorted == "low to high") {
-        bag.sort((a, b) => a.price - b.price);
-    }
-    if (sorted == "high to low") {
-        bag.sort((a, b) => b.price - a.price);}
-        displayTable(bag); };
+  
     function search() {
-    let p = document.querySelector("input").value
+        let x = document.querySelector("input").value
+        console.log(x)
     let newData = bag.filter(function (ele) {
-        return ele.desc.toLowerCase().includes(p.toLocaleLowerCase());
+        return ele.name.toLowerCase().includes(x.toLocaleLowerCase());
        });
     displayTable(newData)
 };
@@ -38,8 +32,10 @@ fetch(url).then((res) => res.json())
         button.innerText = "Add To Cart"
         button.addEventListener("click", function () {
             addData("add", element)
-})
-        div.append(img, title, cost,button)
+        })
+        let fav_btn = document.createElement("button")
+        fav_btn.innerText = "Fav"+" 🛒"
+        div.append(img, title, cost, button, fav_btn);
         document.querySelector("#newArrival").append(div);
 
     })

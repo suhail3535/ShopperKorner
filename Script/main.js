@@ -1,8 +1,12 @@
+
+
 // Slider code(Crausal code)
 let prev = document.getElementById("prev");
 let next = document.getElementById("next");
 let arr = ["Images/1.jpg", "Images/2.jpg", "Images/3.jpg", "Images/4.jpg", "Images/5.jpg", "Images/6.jpg","Images/7.jpg"]
 let i = 0;
+
+// <...slider_part  code for button next and prev...>
 next.addEventListener("click", function () {
     i++;
     if (i > arr.length - 1) {
@@ -17,17 +21,19 @@ prev.addEventListener("click", function () {
     }
     document.getElementById("image").src = arr[i];
 })
+// <......slider_part main function...........>
 function slides() {
 
     document.getElementById("image").src = arr[i];
-    if (i < arr.length - 1) {
+    if (i < arr.length-1) {
         i++;
     }
     else {
         i = 0;
     }
 }
-setInterval(slides, 1500);
+slides()
+setInterval(slides,2000);
 
 // landing page fetch API CODE
 
