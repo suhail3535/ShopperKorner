@@ -15,12 +15,17 @@ body {
 }
 
 #topLogo>a>img {
-    height: 100%;
+    height: 70px;
     width: 20%;
     border: 0px solid red;
     margin-top: 20px;
 }
-
+#topLogo>img{
+    border: 0px solid yellow;
+    height: 70px;
+    width: 20%;
+    margin-top: 20px;
+}
 
 #signInBody {
     height: auto;
@@ -30,6 +35,9 @@ body {
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
+#main{
+    border: 1px solid pink;
+}
 #links {
     height: 5%;
     width: 93%;
@@ -67,9 +75,10 @@ a:hover {
 
 input {
     padding: 15px 15px 15px 15px;
-    /* border: 1px solid yellow;
-    ;
-    outline: 1px solid yellow; */
+     /* border: 1px solid yellow; */
+    border-radius: 5px;;
+    outline: 1px solid yellow;  
+    border: none;
 }
 
 input:focus {
@@ -77,8 +86,6 @@ input:focus {
 
 
 }
-
-
 
 #viaGoogle {
     margin-top: 25px;

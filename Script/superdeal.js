@@ -34,6 +34,7 @@ fetch(url).then((res) => res.json())
         let button = document.createElement("button")
         button.innerText = "Add To Cart"
         button.addEventListener("click", function () {
+            alert("item add in cart");
             addData("add", element)
         })
         let fav_btn = document.createElement("button")
