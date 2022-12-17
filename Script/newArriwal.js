@@ -29,13 +29,19 @@ fetch(url).then((res) => res.json())
         cost.innerText = "Price" + " :- " + element.price;
     
         let button = document.createElement("button")
-        button.innerText = "Add To Cart"
+        button.innerText = "Add To Cart" + " 🛒";
+      
         button.addEventListener("click", function () {
-            addData("add", element)
-            alert("item add in cart")
+            addData("Cart", element)
+            alert("item added in Cart")
+           
         })
         let fav_btn = document.createElement("button")
-        fav_btn.innerText = "Fav"+" 🛒"
+        fav_btn.innerText = "Fav" + " ❤️";
+        fav_btn.addEventListener("click", function () {
+            addData("Fav", element)
+            alert("item added in favorites")
+        })
         div.append(img, title, cost, button, fav_btn);
         document.querySelector("#newArrival").append(div);
 
