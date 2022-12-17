@@ -32,10 +32,9 @@ postBtn.addEventListener("click", async () => {
   if(res.ok==true){
     postcount++;
     localStorage.setItem("postcount",postcount);
-    setTimeout(()=>{
-      swal("Item Adeed", "Item Added Successfully", "success");
-    },1000) 
+   alert("Item added")
     location.reload();
+  
   }
 
   }
