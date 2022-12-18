@@ -3,6 +3,7 @@ function checkout() {
   
   if (flag.length==0){
       alert('Nothing to Order');
+      window.location.href='/card.html'
   }else{
       window.location.href = './project.html';
   }
