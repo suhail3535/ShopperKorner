@@ -96,13 +96,9 @@ filterBtn.addEventListener("change", function () {
     console.log(fvalue)
     async function fetchedFilterData(fvalue) {
     try {
-    
-            let data = await fetch(`https://636a3f79b10125b78fd51599.mockapi.io/superdeals?filter=${fvalue}`)
-            
-
+    let data = await fetch(`https://636a3f79b10125b78fd51599.mockapi.io/superdeals?filter=${fvalue}`)
             if (data.ok) {
-    
-                let newData = await data.json();
+         let newData = await data.json();
                 if (fvalue == "select") {
                    displayTable(bag)
                 }
@@ -110,8 +106,6 @@ filterBtn.addEventListener("change", function () {
             } else {
                 console.log("something went wrong")
 }
-
-    
 } catch (error) {
     console.log(error)
 }
