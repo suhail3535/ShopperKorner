@@ -4,7 +4,7 @@ let url = "https://636a3f79b10125b78fd51599.mockapi.io/newarrival"
 fetch(url).then((res) => res.json())
     .then((data) => {
         bag = data;
-        console.log(data)
+        // console.log(data)
         displayTable(data)
     });
 
@@ -47,9 +47,38 @@ fetch(url).then((res) => res.json())
 
     })
 }
-
+// *****add data******
     function addData(key, value) {
     mData = JSON.parse(localStorage.getItem(key)) || [];
     mData.push(value);
     localStorage.setItem(key, JSON.stringify(mData));
 }
+// **********sort and filter*******
+function sort(){
+    let sorted = document.querySelector("select").value
+    if (sorted === "select") {
+       
+        displayTable(bag)
+        location.reload();
+    } else {
+        if(sorted=="LTH") {
+            bag.sort((a, b) => a.price-b.price);
+        } if (sorted =="HTL") {
+         bag.sort((a, b) => b.price-a.price);
+        } 
+        displayTable(bag);
+        console.log(bag)
+    }
+
+}
+
+//    ******filter********
+let f = document.getElementById("filter")
+    f.addEventListener("change", function () {
+    let filer_new_data = bag.filter(function (ele) {
+        return ele.head === f.value;
+    })
+        console.log(filer_new_data);
+        displayTable(filer_new_data);
+
+})
