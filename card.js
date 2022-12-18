@@ -1,17 +1,17 @@
 function checkout() {
-  let flag =JSON.parse( localStorage.getItem('cart_ls'));
+  let flag =JSON.parse( localStorage.getItem('Cart'));
   
   if (flag.length==0){
       alert('Nothing to Order');
   }else{
-      window.location.href = './address.html';
+      window.location.href = './project.html';
   }
 }
 
 
 
 let order_item = JSON.parse(localStorage.getItem("Cart"));
-console.log(order_item);
+
 
 
 if (order_item == undefined || order_item.length == 0) {
@@ -118,7 +118,7 @@ if (order_item == undefined || order_item.length == 0) {
   function getRandomIntInclusive(min, max) {
     min = Math.ceil(min);
     max = Math.floor(max);
-    return Math.floor(Math.random() * (max - min + 1) + min); //The maximum is inclusive and the minimum is inclusive
+    return Math.floor(Math.random() * (max - min + 1) + min); 
   }
 
   let bill = {
