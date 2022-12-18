@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/payment.css">
+</head>
+
+<body>
+
+    <div id="main_container">
+        <h2>Your Shopping Basket</h2>
+        <hr>
+
+        <div id="cart_products">
+            <div id="product_details">
+                <form>
+                    <label>First Name</label><br>
+                    <input type="text" placeholder="FirstName"><br>
+
+                    <label>Address Line 1</label><br>
+                    <input type="text" placeholder="Address1"><br>
+                    <label>City</label><br>
+                    <input type="text" placeholder="City"><br>
+                    <label>Pin Code</label><br>
+                    <input type="number" placeholder="Pin Code"><br>
+                   </form>
+                   <div id="two">
+                    <form>
+                        <label>Last Name</label><br>
+                        <input type="text" placeholder="LastName"><br>
+                        <label>Address Line 2</label><br>
+                        <input type="text" placeholder="Address2"><br>
+                        <label>State</label><br>
+                        <input type="text" placeholder="State"><br>
+                        <label>MobileNumber</label><br>
+                        <input type="Number" placeholder="MobileNumber"><br>
+                        </form>
+                </div>
+                <button></button>
+            </div>
+            <div id="payment_details">
+                <div id="total">
+                    <p>Total MRP : -<span id="total_price">0</span></p>
+                    <p>Shipping charge : - <span id="shipping">Free</span></p>
+                </div>
+                <div id="payment_option">
+                    <label for="">Payment Method:</label>
+                    <select name="" id="payment">
+                        <option value="">----Select Method----</option>
+                        <option value="upi">UPI</option>
+                        <option value="card">Card</option>
+                        <option value="cash">Cash On Delivery</option>
+                    </select>
+                    <div id="show_pay" class=".button-13"></div>
+                </div>
+                <hr width="90%">
+               <a href="carddetail.html"><button class="checkout">Check Out</button></a>
+                <hr width="90%">
+
+                <div id="offer">
+                    <div id="offer_img"><img src="https://www.lifestylestores.com/static/icons/gift-box.png" alt="">
+                    </div>
+                    <div id="offer_msg">
+                        <h3>Offers for you !</h3>
+                        <p>Choose and apply voucher in 2 simple steps</p>
+                    </div>
+                </div>
+                <hr width="90%">
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+    <div class="container">
+
+        <div class="popup" id="popup">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwuW7x6FgK0aILG3JgBT7yOy4HFZq4LO1JdQ&usqp=CAU"
+                alt="">
+            <h2>Thank You!</h2>
+            <p>Your Order has been successfully placed. Thanks!</p>
+            <button type="button" id="ok_btn">OK</button>
+        </div>
+    </div>
+</body>
+
+</html>
+<script>
+let amount=JSON.parse(localStorage.getItem("order_bill"))||[];
+ let z=document.getElementById("total_price").innerText=amount.total
+console.log(amount)
+</script>

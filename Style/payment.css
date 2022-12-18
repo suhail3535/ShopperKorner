@@ -6,7 +6,7 @@ h1{
     color:blueviolet;
 }
 #main_container{
-    border: 1px solid red;
+    border: 0px solid red;
     width: 80%;
     margin: auto;
     height: 700px;
@@ -19,12 +19,46 @@ h1{
 #cart_products{
     display: flex;
     justify-content: space-between;
+    border: 0px solid green;
 }
 /* -------------------items------------------- */
 #product_details{
-    border: 1px solid blue;
+    border: 0px solid blue;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
     margin-top: 20px;
     width: 64%;
+    display: flex;
+    justify-content: space-between;
+}
+#product_details>form>input{
+    border: 1px solid black;
+    height: 30px;
+    width: 350px;
+    padding: 5px;
+    margin: 10px 10px;
+   align-items: center;
+   border-radius: 5px;
+}
+#product_details>form{
+    border: 0px solid red;
+    margin-top: 20px;
+}
+#two>form>input{
+    border: 1px solid black;
+    height: 30px;
+    width: 350px;
+    padding: 5px;
+    margin: 10px 10px;
+   align-items: center;
+   border-radius: 5px;
+}
+#two>form{
+    border: 0px solid red;
+    margin-top: 20px;
+}
+label{
+    margin-top: 10px;
+    margin-left: 10px;
 }
 .empty{
     width: 100%;

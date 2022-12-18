@@ -11,7 +11,7 @@ function checkout() {
 
 
 let order_item = JSON.parse(localStorage.getItem("Cart"));
-console.log(order_item);
+// console.log(order_item);
 
 
 if (order_item == undefined || order_item.length == 0) {
@@ -95,9 +95,6 @@ if (order_item == undefined || order_item.length == 0) {
       }
     });
   }
-
-
-
   let sum1 = 0;
   let sum2 = 0;
   for (let i = 0; i < order_item.length; i++) {
@@ -121,14 +118,17 @@ if (order_item == undefined || order_item.length == 0) {
     return Math.floor(Math.random() * (max - min + 1) + min); //The maximum is inclusive and the minimum is inclusive
   }
 
-  let bill = {
-    your_subtotal: Math.ceil(sum1),
-    saving: Math.ceil(t_save),
-    Total: Math.ceil(sum1),
-  };
-  console.log(bill);
-  localStorage.setItem("order_bill", JSON.stringify(bill));
 
+  
+  let bill = {
+    // your_subtotal: Math.ceil(sum1),
+    // saving: Math.ceil(t_save),
+    Total: Math.ceil(sum1)
+  };
+  
+  
+  localStorage.setItem("order_bill",JSON.stringify(bill));
+console.log(bill)
   
 
 }
