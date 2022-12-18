@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>debit card details</title>
+    <style>
+
+.main>div>input,select{
+border: 1px solid black;
+  width: 250px;
+  text-align: center;
+  font-size: larger;
+  color: green;
+  border-radius: 10px;
+  
+ 
+}
+
+#bottom_img>img{
+    border: 0px solid greenyellow;
+    width: 99%;
+    margin-top: 20px;
+    margin-bottom: 10px;
+
+
+}
+a{
+    text-decoration: none;
+}
+
+#debit_card {
+    border: 0px solid red;
+    width: 30%;
+    height: auto;
+    border-radius: 15px;
+    margin: auto;
+    /* background-color:#003b95; */
+    padding-bottom: 30px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+button:hover {
+    background: yellow;
+    color: black;
+}
+
+#debit_card>button>a{
+    color: white;
+}
+    
+form {
+    width: 300px;
+    margin:auto
+}
+
+form label {
+    display: flex;
+    margin-top: 20px;
+    padding-bottom: 10px;
+
+}
+
+form input {
+    width: 90%;
+    padding: 10px;
+    border: none;
+    border: 1px solid green;
+    border-radius: 5px;
+   
+}
+button{
+    width: 100%;
+    height: 45px;
+    border-radius:5px ;
+    background-color: green;
+    color: white;
+   font-size: 20px;
+    }
+    h1{
+        text-align: center;
+        margin-top: 30px;
+    }
+p{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    
+    
+    
+    }
+    .login{
+        width: 30%;
+        height: auto;
+        margin: auto;
+        border-radius: 15px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        margin-top: 0px;
+    }
+    .one{
+        margin-top: 30px;
+        margin-bottom: 30px;
+        font-size: 20px;
+       }
+       .two>a{
+        font-size: 20px;
+        color: white;
+       }
+    #pad{
+        padding-bottom: 30px;
+        
+    }
+    
+    a{
+        color: blue;
+        text-decoration: none;
+
+    }
+    #fottor {
+        margin: auto;
+        background-color: #003580;
+        margin-top: 15px;
+    }
+    
+    #fottor>div {
+        margin: auto;
+        height: 250px;
+        text-align: center;
+        padding: 20px 0px;
+        font-size: large;
+        color: white;
+    }
+    
+    #fottor>div>input {
+        width: 400px;
+        height: 50px;
+        border-radius: 5px;
+        font-size: medium;
+    
+    
+    
+    }
+    
+    #fottor>div>button {
+        width: 150px;
+        height: 50px;
+        border-radius: 5px;
+        font-size: medium;
+    }
+    
+    
+    #extra{
+        margin: auto;
+        border: 0px solid green;
+        height: 60px;
+        text-align: center;
+        margin-top: 20px;
+        
+    }
+    #extra>a{
+        font-size: large;
+        color: gray;
+        font-weight: 200;
+        font-size: 30px;
+        
+    }
+    #part{
+        width: 90%;
+        margin: auto;
+        text-align: center;
+        border: 0px solid blue;
+        height: 40px;
+        font-size: 20px;
+        margin-top: 20px;
+    }
+    #most{
+    border: 0px solid orange;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 40px;
+    margin-bottom: 100px;
+    gap:20px;
+    height: 40px;
+    
+    
+    
+    }
+    .one>a{
+        color: white;
+    }
+</style>
+</head>
+<body>
+    <div id="debit_card">
+
+        <h1>Enter Your Card Details</h1>
+        <form>
+        <label>Card Number</label>
+        <input type="password" placeholder=" Enter Card Number 💳 "  id="Email" >
+        <label>Name on Card</label>
+        <input type="text" placeholder="Enter Card Holder Name" id="mobile">
+        <label>OTP Authorization</label>
+        <input type="number" placeholder="Enter OTP" id="pass" >
+        <label>  Expiry Date </label>
+        <input type="date">
+        <label>CVV</label>
+        <input type="password">
+        <div id="bottom_img"> <img src=" https://support.direct.ingenico.com/contentAsset/image/e26cb25b-7c66-4950-9ee1-86376f2e8cdb/fileAsset" alt=""> </div>
+        <button>Pay Now</button>
+        </form>
+        </div>
+</body>
+</html>
+<script>
+
+let payment=document.querySelector("form");
+ 
+let Bag=JSON.parse(localStorage.getItem("pay"))||[]
+payment.addEventListener("submit",function(event){
+    event.preventDefault();
+    
+let obj={
+    email:payment.Email.value,
+    mobile:payment.mobile.value,
+    pass:payment.pass.value
+    }
+    Bag.push(obj)
+    if (obj.email == "" || obj.mobile == "" || obj.pass == "") {
+       alert(" please  fill correct card  details")
+    } else {
+        
+        localStorage.setItem("pay", JSON.stringify(Bag))
+        alert("your payment has been successfull 🎉 ")
+        window.location.href = "index.html";
+
+   }
+   
+
+   
+
+})
+
+
+
+
+</script>
