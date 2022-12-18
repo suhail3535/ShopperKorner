@@ -96,7 +96,6 @@ body {
 }
 
 .fa-solid:hover {
-    background-color:yellow;
     color: rgb(255, 255, 0);
     font-size: 30px;
     
@@ -325,7 +324,16 @@ form>input {
     border: none;
     color:black;
 }
-
+#back{
+    width: 80%;
+    height: 250px;
+    border-radius: 30px;
+    margin: auto;
+    /* background-color:yellow; */
+  background-image: url("https://www.gearbest.com/u_file/2212/12/photo/105254957714338494-195a.jpg?x-oss-process=image/format,webp/resize,m_lfit,h_0,w_1920");
+  background-position: center;
+  background-size: cover;
+}
 
 
 </style>
@@ -357,7 +365,10 @@ form>input {
 
 
 </div>
-
+     <div id="back">
+     </div>
+     <h1 style="margin-left: 150px ; color:teal; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"><i style="color: yellow;" class="fa-solid fa-star"></i> Here are your favorites products</h1>
+    
 <!-- <....display function.....> -->
     <div id="favourite"></div>
 
@@ -470,7 +481,7 @@ form>input {
 
         </div>
     </div>
-    <div id="copyright">Copyright © 2014-2022 Gearbest.com. All Rights Reserved.</div>
+    <div id="copyright">Copyright © 2014-2022 Shopper Korner All Rights Reserved.</div>
 </body>
 </html>
 <script>
@@ -499,8 +510,9 @@ form>input {
         let del_btn = document.createElement("button")
         del_btn.innerText = "Delete";
         del_btn.addEventListener("click", function () {
-            deleteData(fav, index)
-            alert("item deleted")
+        deleteData(fav, index)
+            alert("item deleted");
+            location.reload()
         })
        
         div.append(img, dis, cost, button,del_btn)
@@ -518,9 +530,18 @@ function addData(key, value) {
 // ********delete data function********
 function deleteData(data,index){
   data.splice(index,1)
-    localStorage.setItem("fav",JSON.stringify(data))
-    displayTable(data)
+    localStorage.setItem("Fav",JSON.stringify(data))
+    displayTable(data);
+
 }
-displayTable(fav)
+displayTable(fav);
+//chetan
+let fav_count=JSON.parse(localStorage.getItem("Fav"));
+console.log(fav_count.length)
+document.querySelector("#favcount").innerText= fav_count.length;
+let cart_ls = JSON.parse(localStorage.getItem("Cart")) || 0;
+let count = document.getElementById("cartcount");
+count.innerText = cart_ls.length;
+
 
 </script>
