@@ -1,3 +1,38 @@
+// user-name
+var win= window.location.href
+var userUrl =new URL(win)
+
+var params = new URLSearchParams(userUrl.search)
+
+var username=params.get('username')
+
+var user= document.getElementById('user__name')
+
+if(username==null){
+    user.textContent="Sign In"
+    // user.style.display = "none"
+  }else{
+    user.style.display = "block"
+    user.textContent= `${username}`
+
+    
+  }
+
+//   cart-count
+
+let cart_ls = JSON.parse(localStorage.getItem("Cart"));
+let count = document.getElementById("cartcount");
+if(cart_ls == null){
+    count.innerText = '0';
+}else{
+    count.innerText = cart_ls.length;
+    
+}
+
+
+
+
+
 
 
 // Slider code(Crausal code)
@@ -82,6 +117,7 @@ function displayTable(data) {
         cost.innerText = "Price" + " :-$" + element.price;
         let button = document.createElement("button")
         button.innerText = "Add To Cart" + " 🛒";
+        
       
         button.addEventListener("click", function () {
             addData("Cart", element)
