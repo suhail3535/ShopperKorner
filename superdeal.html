@@ -32,22 +32,22 @@
             <spam id="cartcount">0</spam><a href="card.html">cart</a>
         </div>
         </div>
-
+<!-- ****sort and filter**** -->
      <div id="mainpart">       
         <div id="sorting">
-            <select> 
-            <option value="">select</option>
-            <option value="">Low to High</option>
-            <option value="">High to Low</option>
+            <select onchange="sort()"> 
+            <option value="select">select by price</option>
+            <option value="LTH">Low to High</option>
+            <option value="HTL">High to Low</option>
             </select>
             </div>
              <div id="filtering">
-                <select>
-                    <option value="">select</option>
-                    <option value="">Xiaomi</option>
-                    <option value="">Smart Watch</option>
-                    <option value="">Bluetooth</option>
-                    <option value="">Smartphone</option>
+                <select id="filter">
+                    <option value="select">select</option>
+                    <option value="Xiaomi">Xiaomi</option>
+                    <option value="Smart Watch">Smart Watch</option>
+                    <option value="Bluetooth">Bluetooth</option>
+                    <option value="Smartphone">Smartphone</option>
             </select>
                
             </div>
