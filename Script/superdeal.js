@@ -76,14 +76,49 @@ function sort(){
     }
 
 }
-// sort();
-   
-let f = document.getElementById("filter")
-    f.addEventListener("change", function () {
-    let filer_new_data = bag.filter(function (ele) {
-        return ele.head === f.value;
-    })
-        console.log(filer_new_data);
-        displayTable(filer_new_data);
 
-})
+   
+// let f = document.getElementById("filter")
+//     f.addEventListener("change", function () {
+//     let filer_new_data = bag.filter(function (ele) {
+//         return ele.head === f.value;
+//     })
+//         console.log(filer_new_data);
+//         displayTable(filer_new_data);
+
+// })
+
+// /blogs?filter=blog1 - search by all fields for string blog1
+
+let filterBtn = document.getElementById("filter")
+filterBtn.addEventListener("change", function () {
+    let fvalue = filterBtn.value
+    console.log(fvalue)
+    async function fetchedFilterData(fvalue) {
+    try {
+    
+            let data = await fetch(`https://636a3f79b10125b78fd51599.mockapi.io/superdeals?filter=${fvalue}`)
+            
+
+            if (data.ok) {
+    
+                let newData = await data.json();
+                if (fvalue == "select") {
+                   displayTable(bag)
+                }
+                displayTable(newData)
+            } else {
+                console.log("something went wrong")
+}
+
+    
+} catch (error) {
+    console.log(error)
+}
+
+}
+fetchedFilterData(fvalue)
+
+
+}) 
+  

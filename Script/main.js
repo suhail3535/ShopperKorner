@@ -76,17 +76,7 @@ fetch(url).then((res) => res.json())
         displayTable(bag)
     });
 
-// <......sort by price function...........>
-    function justSort() {
-    let sorted = document.querySelector("select").value;
-    if (sorted == "low to high") {
-        bag.sort((a, b) => a.price - b.price);
-    }
-    if (sorted == "high to low") {
-        bag.sort((a, b) => b.price - a.price);
-    }
-    displayTable(bag);
-};
+
     // <......search function...........>
 
    function search() {
