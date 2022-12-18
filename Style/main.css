@@ -274,13 +274,13 @@ body {
 
 .fa-solid {
     background-color: white;
-    color: rgb(12, 12, 12);
+    /* color: rgb(12, 12, 12); */
     font-size: 20px;
-   border: 0px solid red;
+   /* border: 0px solid red; */
 }
 
 .fa-solid:hover {
-    background-color:yellow;
+    /* background-color:yellow; */
     color: rgb(255, 255, 0);
     font-size: 30px;
     
@@ -288,7 +288,7 @@ body {
 
 .fa-solid:nth-child(1) {
     color: black;
-    border: 0px solid green;
+    /* border: 0px solid green; */
 }
 
 #favcount {

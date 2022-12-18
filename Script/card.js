@@ -9,11 +9,8 @@ function checkout() {
   }
   
   
-  
   let order_item = JSON.parse(localStorage.getItem("Cart"));
-  
-  
-  
+
   if (order_item == undefined || order_item.length == 0) {
     let cont = document.getElementById("container");
   
