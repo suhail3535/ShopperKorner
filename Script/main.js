@@ -115,16 +115,41 @@ function displayTable(data) {
         
       
         button.addEventListener("click", function () {
-            addData("Cart", element)
-            alert("item added in Cart");
+            let check=JSON.parse(localStorage.getItem("Cart"));
+            let flag="Yes";
+            check.forEach((item)=>{
+                if(item.desc===element.desc){
+                    flag="No"
+                }
+            });
+            if(flag=="Yes"){
+                addData("Cart", element)
+            alert("item added in Cart✅");
             location.reload();
+            }else{
+                alert("Product already in the cart❌")
+            }
+           
            
         })
         let fav_btn = document.createElement("button")
         fav_btn.innerText = "Fav" + " ❤️";
         fav_btn.addEventListener("click", function () {
-            addData("Fav", element)
-            alert("item added in favorites")
+            
+            let check=JSON.parse(localStorage.getItem("Fav"));
+            let flag="Yes";
+            check.forEach((item)=>{
+                if(item.desc===element.desc){
+                    flag="No"
+                }
+            });
+            if(flag=="Yes"){
+                addData("Fav", element);
+            alert("item added in favorites✅");
+            location.reload()
+            }else{
+                alert("Product already in the Favorite❌")
+            }
         })
         div.append(img, dis, cost, button, fav_btn)
         document.querySelector("#container").append(div);
@@ -138,7 +163,9 @@ function addData(key, value) {
     mData.push(value);
     localStorage.setItem(key, JSON.stringify(mData));
 }
-
+/////chetan added
+let fav_count=JSON.parse(localStorage.getItem("Fav"));
+document.querySelector("#favcount").innerText= fav_count.length
 
 
 
