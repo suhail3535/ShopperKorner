@@ -6,10 +6,12 @@ h1{
     color:blueviolet;
 }
 #main_container{
-    border: 0px solid red;
     width: 80%;
     margin: auto;
     height: 700px;
+    padding: 1%;
+    margin-bottom: -100px;
+    
 }
 #main_container h2{
     font-weight:500;
@@ -20,6 +22,7 @@ h1{
     display: flex;
     justify-content: space-between;
     border: 0px solid green;
+    
 }
 /* -------------------items------------------- */
 #product_details{
@@ -29,6 +32,9 @@ h1{
     width: 64%;
     display: flex;
     justify-content: space-between;
+    padding: 10px;
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
 }
 #product_details>form>input{
     border: 1px solid black;
@@ -69,6 +75,7 @@ label{
 .cards{
     border: 1px solid rgba(199, 195, 195, 0.806);
     margin-bottom: 10px;
+    
     
 }
 .div_box{
@@ -132,6 +139,9 @@ label{
     height: 500px;
     margin-top: 20px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    margin-left: 10px;
 }
 
 #total{
@@ -432,14 +442,12 @@ label{
   
   
   /* **footer** */
-  #footer{
-      background-color:rgb(255,255,255) ;
-  }
+  
   #bottom {
     margin: auto;
     width: 80%;
     padding: 2%;
-    background-color: rgb(255,255,255);
+    background-color: whitesmoke;
     border-radius: 5px;
   }
   
@@ -494,7 +502,8 @@ label{
     margin: auto;
     width: 80%;
     padding: 2%;
-    background-color:rgb(255,255,255);
+    background-color: whitesmoke;
+    margin-top: 5px;
     border-radius: 5px;
   }
   

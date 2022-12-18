@@ -41,15 +41,15 @@
         <div id="cart_products">
             <div id="product_details">
                 <form>
-                    <label>First Name</label><br>
-                    <input type="text" placeholder="FirstName"><br>
+                    <label><spam style="color:red">* </spam>First Name</label><br>
+                    <input type="text" placeholder="FirstName" id="FN"><br>
 
-                    <label>Address Line 1</label><br>
-                    <input type="text" placeholder="Address1"><br>
-                    <label>City</label><br>
-                    <input type="text" placeholder="City"><br>
-                    <label>Pin Code</label><br>
-                    <input type="number" placeholder="Pin Code"><br>
+                    <label><spam style="color:red">* </spam>Address Line 1</label><br>
+                    <input type="text" placeholder="Address1" id="AD"><br>
+                    <label><spam style="color:red">* </spam>City</label><br>
+                    <input type="text" placeholder="City" id="CT"><br>
+                    <label><spam style="color:red">* </spam>Pin Code</label><br>
+                    <input type="number" placeholder="Pin Code" id="PN"><br>
                    </form>
                    <div id="two">
                     <form>
@@ -57,13 +57,12 @@
                         <input type="text" placeholder="LastName"><br>
                         <label>Address Line 2</label><br>
                         <input type="text" placeholder="Address2"><br>
-                        <label>State</label><br>
-                        <input type="text" placeholder="State"><br>
-                        <label>MobileNumber</label><br>
-                        <input type="Number" placeholder="MobileNumber"><br>
+                        <label><spam style="color:red">* </spam>State</label><br>
+                        <input type="text" placeholder="State" id="ST"><br>
+                        <label><spam style="color:red">* </spam>MobileNumber</label><br>
+                        <input type="Number" placeholder="MobileNumber" id="MN"><br>
                         </form>
                 </div>
-                <button></button>
             </div>
             <div id="payment_details">
                 <div id="total">
@@ -81,7 +80,7 @@
                     <div id="show_pay" class=".button-13"></div>
                 </div>
                 <hr width="90%">
-               <a href="carddetail.html"><button id="checkout">Check Out</button></a>
+               <a ><button id="checkout"><spam id="auto1"></spam></button></a>
                 <hr width="90%">
 
                 <div id="offer">
@@ -190,16 +189,43 @@
 
         </div>
     </div>
-    <div id="copyright">Copyright © 2014-2022 Gearbest.com. All Rights Reserved.</div>
+    <div id="copyright">Copyright © 2014-2022 Shooper Korner.com. All Rights Reserved.</div>
 </div>
 
 </body>
-
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script>
+  var typed = new Typed("#auto1", {
+    strings: ["Check Out >>"],
+    typeSpeed: 60,
+    backSpeed: 60,
+    loop: true,
+  });
+</script>
 </html>
 
 <!-- ******chetan work here**** -->
 <script>
 let amount=JSON.parse(localStorage.getItem("order_bill"))||[];
- let z=document.getElementById("total_price").innerText=amount.total
-console.log(amount)
+console.log(amount.Total)
+let z=document.getElementById("total_price").innerText=amount.Total +" $";
+let checkout=document.querySelector("#checkout");
+checkout.addEventListener('click',(even)=>{
+    let FN=document.querySelector("#FN").value;
+    let AD=document.querySelector("#AD").value;
+    let CT=document.querySelector("#CT").value;
+    let PN=document.querySelector("#PN").value;
+    let ST=document.querySelector("#ST").value;
+    let MN=document.querySelector("#MN").value;
+    if(FN!=="" && AD!=="" && CT!=="" && PN!=="" && ST!=="" && MN!==""){
+       if(document.querySelector("#payment").value==""){
+          alert("select payment medthod")
+       }else{
+        window.location.href="carddetail.html"
+       }
+       
+    }else{
+        alert("Enter Valid Shipping Details")
+    }
+})
 </script>
