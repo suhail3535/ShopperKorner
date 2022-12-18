@@ -5,8 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="/Images/mainlogo.jpeg">
-   
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+
+     <!-- *****script code written below**** -->
     <title>Document</title>
     <style>
 
@@ -344,7 +345,7 @@ form>input {
         <a href="/register.html">sign In</a>
     </div>
     <div id="fav"> <i class="fa-solid fa-heart fa-beat"></i>
-        <spam id="favcount">0</spam><a href="fav.html">Favorites</a>
+        <spam id="favcount">0</spam><a href="favourite.html">Favorites</a>
     </div>
     <div id="cart">
         <i class="fa-sharp fa-solid fa-cart-shopping"></i>
@@ -477,9 +478,9 @@ form>input {
     let fav=JSON.parse(localStorage.getItem("Fav"))
     let cont=document.querySelector("favourite")
 
-function displayTable(data) {
+    function displayTable(data) {
     document.querySelector("#favourite").innerHTML = "";
-    data.forEach(function (element) {
+    data.forEach(function (element,index) {
         let div = document.createElement("div");
         let img = document.createElement("img");
         img.setAttribute("src", element.image)
@@ -495,18 +496,31 @@ function displayTable(data) {
             addData("Cart", element)
             alert("item added in Cart")
         })
+        let del_btn = document.createElement("button")
+        del_btn.innerText = "Delete";
+        del_btn.addEventListener("click", function () {
+            deleteData(fav, index)
+            alert("item deleted")
+        })
        
-        div.append(img, dis, cost, button)
+        div.append(img, dis, cost, button,del_btn)
         document.querySelector("#favourite").append(div);
 
     })
 }
+// ***********add to cart function********
 function addData(key, value) {
     mData = JSON.parse(localStorage.getItem(key)) || [];
     mData.push(value);
     localStorage.setItem(key, JSON.stringify(mData));
 }
 
+// ********delete data function********
+function deleteData(data,index){
+  data.splice(index,1)
+    localStorage.setItem("fav",JSON.stringify(data))
+    displayTable(data)
+}
 displayTable(fav)
 
 </script>
