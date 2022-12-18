@@ -1,66 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gearbest: Affordable Quality, Fun</title>
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico" />
+    <link rel="stylesheet" href="./Style/register.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Gearbest: Affordable Quality, Fun</title>
-  <link rel="icon" type="image/x-icon" href="./images/favicon.ico" />
-  <link rel="stylesheet" href="./Style/register.css" />
-</head>
-
-<body>
-  <div id="topLogo">
-    <a href="index.html"><img id="home" src="/Images/mainlogo.jpeg" /></a>
-    <!-- <img src="./Images/navlogo.jpeg" alt="" id="icon" /> -->
-  </div>
-<div id="signInBody">
-    <div id="links">
-      <div><a href="login.html">SIGN IN</a></div>
-      <div><a href="register.html">REGISTER</a></div>
+  <body>
+    <div id="topLogo">
+      <a href="index.html"><img id="home" src="/Images/mainlogo.jpeg" /></a>
+      <!-- <img src="./Images/navlogo.jpeg" alt="" id="icon" /> -->
     </div>
-    <div id="formDiv">
-      <form onsubmit="register(event)" id="form">
-        <input id="email" type="email" placeholder="Email" required />
-        <input id="password" type="password" placeholder="Password" required />
-        <input id="password2" type="password" placeholder="Retype Password" required />
+    <div id="signInBody">
+      <div id="links">
+        <div><a href="login.html">SIGN IN</a></div>
+        <div><a href="register.html">REGISTER</a></div>
+      </div>
 
-        <div id="checkbox">
-          <input id="check" type="checkbox" />
-          <p>
-            I agree to Gearbest Terms and Conditions and Privacy Policies.
-          </p>
+      <div id="formDiv">
+        <form onsubmit="register(event)" id="form">
+          <input id="email" type="email" placeholder="Email" required />
+          <input
+            id="password"
+            type="password"
+            placeholder="Password"
+            required
+          />
+          <input
+            id="password2"
+            type="password"
+            placeholder="Retype Password"
+            required
+          />
+
+          <div id="checkbox">
+            <input id="check" type="checkbox" />
+            <p>
+              I agree to Gearbest Terms and Conditions and Privacy Policies.
+            </p>
+          </div>
+          <div id="tip">
+            <p>
+              Tip: To maximize online security, please do not reuse passwords or
+              choose easy to guess ones on Gearbest.
+            </p>
+          </div>
+          <input id="button" type="submit" value="Register" />
+        </form>
+        <div id="viaGoogle">
+          <p>or conect Via</p>
+          <img
+            src="https://www.freepnglogos.com/uploads/google-logo-png/google-logo-png-suite-everything-you-need-know-about-google-newest-0.png"
+            alt=""
+          />
         </div>
-        <div id="tip">
-          <p>
-            Tip: To maximize online security, please do not reuse passwords or
-            choose easy to guess ones on Gearbest.
-          </p>
-        </div>
-        <input id="button" type="submit" value="Register" />
-      </form>
-      <div id="viaGoogle">
-        <p>or conect Via</p>
-        <img
-          src="https://www.freepnglogos.com/uploads/google-logo-png/google-logo-png-suite-everything-you-need-know-about-google-newest-0.png"
-          alt="" />
       </div>
     </div>
-  </div>
 
-  <div id="bottom">
-    <div id="img">
-      <img src="https://css.gbtcdn.com/imagecache/gbw/img/site/money_back2@.png" alt="" />
-      <img src="https://css.gbtcdn.com/imagecache/gbw/img/site/mcafee_secure@.png" alt="" />
-      <img src="https://css.gbtcdn.com/imagecache/gbw/img/site/paypal@.png" alt="" />
+    <div id="bottom">
+      <div id="img">
+        <img
+          src="https://css.gbtcdn.com/imagecache/gbw/img/site/money_back2@.png"
+          alt=""
+        />
+        <img
+          src="https://css.gbtcdn.com/imagecache/gbw/img/site/mcafee_secure@.png"
+          alt=""
+        />
+        <img
+          src="https://css.gbtcdn.com/imagecache/gbw/img/site/paypal@.png"
+          alt=""
+        />
+      </div>
+      <div id="copyright">
+        <p>Copyright © 2014-2023 Gearbest.com. All Rights Reserved.</p>
+      </div>
     </div>
-    <div id="copyright">
-      <p>Copyright © 2014-2023 Gearbest.com. All Rights Reserved.</p>
-    </div>
-  </div>
-</body>
-
+  </body>
 </html>
 
 <script src="Script/register.js"></script>

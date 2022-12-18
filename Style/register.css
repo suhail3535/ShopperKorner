@@ -14,13 +14,15 @@ body {
     border: 0px solid green;
 }
 
+
 #topLogo>a>img {
     height: 70px;
     width: 20%;
     border: 0px solid red;
     margin-top: 20px;
 }
-#topLogo>img{
+
+#topLogo>img {
     border: 0px solid yellow;
     height: 70px;
     width: 20%;
@@ -31,13 +33,14 @@ body {
     height: auto;
     width: 35%;
     margin-top: 20px;
-    margin-left: 60%;
+    margin-left: 34%;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
-#main{
+#main {
     border: 1px solid pink;
 }
+
 #links {
     height: 5%;
     width: 93%;
@@ -75,9 +78,10 @@ a:hover {
 
 input {
     padding: 15px 15px 15px 15px;
-     /* border: 1px solid yellow; */
-    border-radius: 5px;;
-    outline: 1px solid yellow;  
+    /* border: 1px solid yellow; */
+    border-radius: 5px;
+    ;
+    outline: 1px solid yellow;
     border: none;
 }
 
