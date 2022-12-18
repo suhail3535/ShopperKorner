@@ -219,7 +219,7 @@ label{
 
 
 /* checkout btn */
-.checkout{
+#checkout{
     width: 50%;
     border: none;
     background-color: #faa619;

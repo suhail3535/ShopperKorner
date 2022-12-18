@@ -121,7 +121,8 @@ function displayTable(data) {
       
         button.addEventListener("click", function () {
             addData("Cart", element)
-            alert("item added in Cart")
+            alert("item added in Cart");
+            location.reload();
            
         })
         let fav_btn = document.createElement("button")

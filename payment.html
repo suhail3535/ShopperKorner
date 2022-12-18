@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style/payment.css">
+    <!-- ******script written by me in bottom section**** -->
    
 </head>
 
@@ -80,7 +81,7 @@
                     <div id="show_pay" class=".button-13"></div>
                 </div>
                 <hr width="90%">
-               <a href="carddetail.html"><button class="checkout">Check Out</button></a>
+               <a href="carddetail.html"><button id="checkout">Check Out</button></a>
                 <hr width="90%">
 
                 <div id="offer">
@@ -195,6 +196,8 @@
 </body>
 
 </html>
+
+<!-- ******chetan work here**** -->
 <script>
 let amount=JSON.parse(localStorage.getItem("order_bill"))||[];
  let z=document.getElementById("total_price").innerText=amount.total
