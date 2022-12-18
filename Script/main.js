@@ -30,11 +30,6 @@ if(cart_ls == null){
 }
 
 
-
-
-
-
-
 // Slider code(Crausal code)
 let prev = document.getElementById("prev");
 let next = document.getElementById("next");
