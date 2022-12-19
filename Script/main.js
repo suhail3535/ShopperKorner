@@ -20,7 +20,7 @@ if(username==null){
 
 //   cart-count
 
-let cart_ls = JSON.parse(localStorage.getItem("Cart"));
+let cart_ls = JSON.parse(localStorage.getItem("Cart"))|| [];
 let count = document.getElementById("cartcount");
 if(cart_ls == null){
     count.innerText = '0';
@@ -105,7 +105,7 @@ function displayTable(data) {
         
       
         button.addEventListener("click", function () {
-            let check=JSON.parse(localStorage.getItem("Cart"));
+            let check=JSON.parse(localStorage.getItem("Cart"))|| [];
             let flag="Yes";
             check.forEach((item)=>{
                 if(item.desc===element.desc){
@@ -126,7 +126,7 @@ function displayTable(data) {
         fav_btn.innerText = "Fav" + " ❤️";
         fav_btn.addEventListener("click", function () {
             
-            let check=JSON.parse(localStorage.getItem("Fav"));
+            let check=JSON.parse(localStorage.getItem("Fav"))|| [];
             let flag="Yes";
             check.forEach((item)=>{
                 if(item.desc===element.desc){
@@ -154,7 +154,7 @@ function addData(key, value) {
     localStorage.setItem(key, JSON.stringify(mData));
 }
 /////chetan added
-let fav_count=JSON.parse(localStorage.getItem("Fav"));
+let fav_count=JSON.parse(localStorage.getItem("Fav"))||[];
 document.querySelector("#favcount").innerText= fav_count.length
 
 

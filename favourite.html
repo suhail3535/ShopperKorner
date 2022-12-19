@@ -488,7 +488,7 @@ form>input {
 </html>
 <script>
 
-    let fav=JSON.parse(localStorage.getItem("Fav"))
+    let fav=JSON.parse(localStorage.getItem("Fav"))||[]
     let cont=document.querySelector("favourite")
 
     function displayTable(data) {
@@ -532,16 +532,16 @@ function addData(key, value) {
 // ********delete data function********
 function deleteData(data,index){
   data.splice(index,1)
-    localStorage.setItem("Fav",JSON.stringify(data))
+    localStorage.setItem("Fav",JSON.stringify(data))||[]
     displayTable(data);
 
 }
 displayTable(fav);
 //chetan
-let fav_count=JSON.parse(localStorage.getItem("Fav"));
+let fav_count=JSON.parse(localStorage.getItem("Fav"))|| [];
 console.log(fav_count.length)
 document.querySelector("#favcount").innerText= fav_count.length;
-let cart_ls = JSON.parse(localStorage.getItem("Cart")) || 0;
+let cart_ls = JSON.parse(localStorage.getItem("Cart")) || [];
 let count = document.getElementById("cartcount") ;
 count.innerText = cart_ls.length;
 
