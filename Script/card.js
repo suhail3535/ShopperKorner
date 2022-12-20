@@ -12,6 +12,7 @@ function checkout() {
 
 
 let order_item = JSON.parse(localStorage.getItem("Cart"));
+console.log(order_item)
 
 
 
