@@ -120,7 +120,7 @@ fetch(url).then((res) => res.json())
     .then((data) => {
         bag = data;
         console.log(bag)
-        displayTable(bag)
+        displayTable(data)
     });
 
 
