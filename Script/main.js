@@ -115,7 +115,7 @@ setInterval(slides,2000);
 // landing page fetch API CODE
 
 let bag = [];
-let url = "https://636a3f79b10125b78fd51599.mockapi.io/products"
+let url = "https://636a3f79b10125b78fd51599.mockapi.io/newarrival"
 fetch(url).then((res) => res.json())
     .then((data) => {
         bag = data;
@@ -141,10 +141,10 @@ function displayTable(data) {
     data.forEach(function (element) {
         let div = document.createElement("div");
         let img = document.createElement("img");
-        img.setAttribute("src", element.image)
+        img.setAttribute("src", element.Image)
 
         let dis = document.createElement("p");
-        dis.innerText = element.desc;
+        dis.innerText = element.name;
         let cost = document.createElement("h4");
         cost.innerText = "Price" + " :-$" + element.price;
         let button = document.createElement("button")
