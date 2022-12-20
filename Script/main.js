@@ -48,32 +48,32 @@ function sort(){
 }
 
 
-let filterBtn = document.getElementById("filter")
-filterBtn.addEventListener("change", function () {
-    let fvalue = filterBtn.value
-    console.log(fvalue)
-    async function fetchedFilterData(fvalue) {
-    try {
-    let data = await fetch(`https://636a3f79b10125b78fd51599.mockapi.io/products?filter=${fvalue}`)
-            if (data.ok) {
-         let newData = await data.json();
-                if (fvalue == "select") {
-                    location.reload();
-                   displayTable(bag)
-                }
-                displayTable(newData)
-            } else {
-                console.log("something went wrong")
-}
-} catch (error) {
-    console.log(error)
-}
+// let filterBtn = document.getElementById("filter")
+// filterBtn.addEventListener("change", function () {
+//     let fvalue = filterBtn.value
+//     console.log(fvalue)
+//     async function fetchedFilterData(fvalue) {
+//     try {
+//     let data = await fetch(`https://636a3f79b10125b78fd51599.mockapi.io/products?filter=${fvalue}`)
+//             if (data.ok) {
+//          let newData = await data.json();
+//                 if (fvalue == "select") {
+//                     location.reload();
+//                    displayTable(bag)
+//                 }
+//                 displayTable(newData)
+//             } else {
+//                 console.log("something went wrong")
+// }
+// } catch (error) {
+//     console.log(error)
+// }
 
-}
-fetchedFilterData(fvalue)
+// }
+// fetchedFilterData(fvalue)
 
 
-}) 
+// }) 
   
 
 
