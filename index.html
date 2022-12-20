@@ -65,7 +65,31 @@
     <!-- slider part -->
     <div id="topsection">
       <div id="category">
-        <ul style="list-style-type: none">
+     <h3>Sort by Price</h3>
+        <div id="sorting">
+          <select onchange="sort()"> 
+          <option value="select">select by price</option>
+          <option value="LTH">Low to High</option>
+          <option value="HTL">High to Low</option>
+          </select>
+          </div>
+          <h3> Filter by Category</h3>
+          <div id="filtering">
+
+
+            <select id="filter">
+               <option value="select">select</option>
+               <option value="Xiaomi">Xiaomi</option>
+               <option value="Smart Watch">Smart Watch</option>
+               <option value="Bluetooth">Bluetooth</option>
+               <option value="Smartphone">Smartphone</option>
+               <option value="camera ">Camera</option>
+               <option value="Drone">Drone </option>
+               <option value="Memory Card">Memory Card </option>
+           </select>
+          
+       </div>
+        <!-- <ul style="list-style-type: none">
           <li>Consumer Electronics</li>
           <br />
           <li>Industrial & Scientific</li>
@@ -86,7 +110,7 @@
           <br />
           <li>Men's Fashion</li>
           <br />
-        </ul>
+        </ul> -->
       </div>
       <!-- slider_part -->
       <div id="slider">

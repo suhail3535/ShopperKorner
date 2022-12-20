@@ -29,6 +29,53 @@ if(cart_ls == null){
     
 }
 
+function sort(){
+    let sorted = document.querySelector("select").value
+    if (sorted === "select") {
+       
+        displayTable(bag)
+        location.reload();
+    } else {
+        if(sorted=="LTH") {
+            bag.sort((a, b) => a.price-b.price);
+        } if (sorted =="HTL") {
+         bag.sort((a, b) => b.price-a.price);
+        } 
+        displayTable(bag);
+        // console.log(bag)
+    }
+
+}
+
+
+let filterBtn = document.getElementById("filter")
+filterBtn.addEventListener("change", function () {
+    let fvalue = filterBtn.value
+    console.log(fvalue)
+    async function fetchedFilterData(fvalue) {
+    try {
+    let data = await fetch(`https://636a3f79b10125b78fd51599.mockapi.io/products?filter=${fvalue}`)
+            if (data.ok) {
+         let newData = await data.json();
+                if (fvalue == "select") {
+                    location.reload();
+                   displayTable(bag)
+                }
+                displayTable(newData)
+            } else {
+                console.log("something went wrong")
+}
+} catch (error) {
+    console.log(error)
+}
+
+}
+fetchedFilterData(fvalue)
+
+
+}) 
+  
+
 
 // Slider code(Crausal code)
 let prev = document.getElementById("prev");
