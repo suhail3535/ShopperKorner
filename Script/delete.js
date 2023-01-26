@@ -5,14 +5,12 @@ let deletecount= localStorage.getItem("deletecount") || 0;
 deleteBtn.addEventListener("click", async () => {
   try {
     let deleteId = document.getElementById("deleteId").value;
-    let res = await fetch(
-      `https://636a3f79b10125b78fd51599.mockapi.io/products/${deleteId}`,
-      {
-        method:"DELETE",
-        headers: {
-          "Content-Type": "application/json",
-        },
-      })
+    let res = await fetch(`https://fakestoreapi.com/products/${deleteId}`, {
+      method: "DELETE",
+      headers: {
+        "Content-Type": "application/json",
+      },
+    });
       
     if (res.ok) {
       deletecount++;

@@ -18,16 +18,13 @@ postBtn.addEventListener("click", async () => {
   }
   else{
     let postcount=localStorage.getItem("postcount") || 0;
-  let res = await fetch(
-    "https://636a3f79b10125b78fd51599.mockapi.io/products",
-    {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(obj),
-    }
-  );
+  let res = await fetch("https://fakestoreapi.com/products", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(obj),
+  });
   console.log(res);
   if(res.ok==true){
     postcount++;
@@ -43,7 +40,7 @@ postBtn.addEventListener("click", async () => {
 countitems()
 async function countitems(){
   try{
-    let res= await fetch("https://636a3f79b10125b78fd51599.mockapi.io/products");
+    let res = await fetch("https://fakestoreapi.com/products");
     let data = await res.json();
     localStorage.setItem("totalcount",data.length)
   }

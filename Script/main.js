@@ -115,7 +115,7 @@ setInterval(slides,2000);
 // landing page fetch API CODE
 
 let bag = [];
-let url = "https://636a3f79b10125b78fd51599.mockapi.io/products"
+let url = "https://fakestoreapi.com/products";
 fetch(url).then((res) => res.json())
     .then((data) => {
         bag = data;
@@ -130,7 +130,7 @@ fetch(url).then((res) => res.json())
     let p = document.querySelector("input").value;
   
     let newData = bag.filter(function (ele) {
-        return ele.desc.toLowerCase().includes(p.toLocaleLowerCase());
+        return ele.title.toLowerCase().includes(p.toLocaleLowerCase());
     });
     displayTable(newData)
 };
@@ -144,7 +144,7 @@ function displayTable(data) {
         img.setAttribute("src", element.image)
 
         let dis = document.createElement("p");
-        dis.innerText = element.desc;
+        dis.innerText = element.title;
         let cost = document.createElement("h4");
         cost.innerText = "Price" + " :-$" + element.price;
         let button = document.createElement("button")

@@ -14,16 +14,13 @@ updateBtn.addEventListener("click", async () => {
   obj.price = price;
   obj.prevPrice = prevPrice;
 
-  let res = await fetch(
-    `https://636a3f79b10125b78fd51599.mockapi.io/products/${id}`,
-    {
-      method: "PUT",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(obj),
-    }
-  );
+  let res = await fetch(`https://fakestoreapi.com/products/${id}`, {
+    method: "PUT",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(obj),
+  });
   if (res.ok) {
     updateCount++;
     localStorage.setItem("updatecount", updateCount);
